@@ -38,10 +38,12 @@
           "variants": [
             {
               "preview": "ButtonFilledDisabledPreview",
+              "priority": "deferred",
               "state": "disabled"
             },
             {
               "preview": "ButtonFilledMultiLinePreview",
+              "priority": "deferred",
               "props": {
                 "label": "multi-line"
               }
@@ -120,6 +122,7 @@
       "components": [
         {
           "componentId": "Selection/Checkbox",
+          "priority": "deferred",
           "preview": "CheckboxPreview",
           "variants": [
             {
@@ -212,6 +215,7 @@
       "components": [
         {
           "componentId": "Cards/Filled",
+          "priority": "deferred",
           "preview": "CardFilledPreview"
         },
         {
@@ -298,6 +302,7 @@
       "components": [
         {
           "componentId": "Feedback/Inline banner",
+          "priority": "deferred",
           "preview": "InfoBannerInlineNotificationCardPreviewPreview",
           "variants": [
             {
@@ -391,6 +396,7 @@
       "components": [
         {
           "componentId": "Templates/List detail pane",
+          "priority": "deferred",
           "preview": "ListDetailPanePreview",
           "caption": "Responsive list-detail layout across Bolt's device previews."
         },
