@@ -1,6 +1,7 @@
 package net.thunderbird.feature.mail.message.list.internal.ui.renderer.statepreview
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewScreenSizes
@@ -60,4 +61,12 @@ private fun MessageListScreenWarmingUpStatePreview(
             }
         }
     }
+}
+
+@Preview(name = "Catalog - Phone", device = "spec:width=411dp,height=891dp,dpi=420", showSystemUi = true)
+@Composable
+private fun ThunderbirdInboxWarmingUpCatalogPreview() {
+    MessageListScreenWarmingUpStatePreview(
+        params = MessageListScreenWarmingUpStatePreviewParamsProvider().params.first(),
+    )
 }

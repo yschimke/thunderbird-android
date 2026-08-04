@@ -1,6 +1,7 @@
 package net.thunderbird.feature.mail.message.list.internal.ui.renderer.statepreview.loadedmessages
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewScreenSizes
@@ -27,21 +28,21 @@ import net.thunderbird.feature.notification.api.receiver.InAppNotificationStream
 private class MessageListScreenLoadedMessagesContentPreviewParamsProvider : MessageListScreenPreviewParamsProvider() {
     override val params = listOf(
         MessageListScreenPreviewParams(
-            previewName = "Empty Inbox",
-            preferences = MessagePreferencesPreviewHelper.defaultPreferences,
-            state = MessageListState.LoadedMessages(
-                metadata = MessageListMetadataPreviewHelper.inboxMetadata,
-                preferences = MessagePreferencesPreviewHelper.defaultPreferences,
-                messages = persistentListOf(),
-            ),
-        ),
-        MessageListScreenPreviewParams(
             previewName = "Sent Folder",
             preferences = MessagePreferencesPreviewHelper.defaultPreferences,
             state = MessageListState.LoadedMessages(
                 metadata = MessageListMetadataPreviewHelper.sentMetadata,
                 preferences = MessagePreferencesPreviewHelper.defaultPreferences,
                 messages = MessagePreviewHelper.sampleMessages,
+            ),
+        ),
+        MessageListScreenPreviewParams(
+            previewName = "Empty Inbox",
+            preferences = MessagePreferencesPreviewHelper.defaultPreferences,
+            state = MessageListState.LoadedMessages(
+                metadata = MessageListMetadataPreviewHelper.inboxMetadata,
+                preferences = MessagePreferencesPreviewHelper.defaultPreferences,
+                messages = persistentListOf(),
             ),
         ),
         MessageListScreenPreviewParams(
@@ -108,4 +109,12 @@ private fun MessageListScreenLoadedMessagesContentPreview(
             }
         }
     }
+}
+
+@Preview(name = "Catalog - Phone", device = "spec:width=411dp,height=891dp,dpi=420", showSystemUi = true)
+@Composable
+private fun ThunderbirdInboxLoadedCatalogPreview() {
+    MessageListScreenLoadedMessagesContentPreview(
+        params = MessageListScreenLoadedMessagesContentPreviewParamsProvider().params.first(),
+    )
 }

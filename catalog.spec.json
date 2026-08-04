@@ -1,418 +1,138 @@
 {
   "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
-  "$comment": "Thunderbird for Android's Bolt design-system catalog. Bolt is an Atomic Design Compose Multiplatform library shared by Thunderbird and K-9 Mail. Its previews live in commonMain, render through Compose Desktop, and generally show the Thunderbird and K-9 Mail light/dark palettes together so downstream design review covers both white-label applications.",
+  "$comment": "Product-facing Thunderbird catalog rendered from the Android message-list feature. These are the real inbox, search, selection, loading, responsive-layout, density, and archive-folder states used by Thunderbird rather than the four-theme Bolt component specimens.",
   "system": "thunderbird",
   "title": "Thunderbird for Android",
   "library": [
-    "Bolt",
-    "Compose Material 3"
+    "Thunderbird Bolt",
+    "AndroidX Compose Material 3"
   ],
-  "module": ":ui:bolt",
+  "module": ":feature:mail:message:list:internal",
   "modes": [
     "light",
     "dark"
   ],
+  "breakpoints": [
+    {
+      "size": "phone",
+      "widthDp": 411,
+      "device": "spec:width=411dp,height=891dp,dpi=420"
+    },
+    {
+      "size": "tabletLandscape",
+      "widthDp": 1280,
+      "device": "spec:width=1280dp,height=800dp,dpi=240"
+    }
+  ],
   "display": {
     "surface": "light",
-    "hero": "Buttons/Filled"
+    "hero": "Inbox/Loaded"
   },
   "groupOrder": [
-    "Buttons",
-    "Selection controls",
-    "Inputs",
-    "Cards and surfaces",
-    "Navigation",
-    "Feedback",
-    "Typography",
-    "Templates"
+    "Inbox states",
+    "Responsive layouts",
+    "Preferences",
+    "Dialogs"
   ],
   "groups": [
     {
-      "name": "Buttons",
-      "section": "Atoms",
+      "name": "Inbox states",
+      "section": "Screens",
       "components": [
         {
-          "componentId": "Buttons/Filled",
-          "preview": "ButtonFilledPreview",
-          "caption": "Primary filled action in Thunderbird and K-9 Mail themes.",
-          "variants": [
-            {
-              "preview": "ButtonFilledDisabledPreview",
-              "state": "disabled"
-            },
-            {
-              "preview": "ButtonFilledMultiLinePreview",
-              "props": {
-                "label": "multi-line"
-              }
-            }
-          ]
+          "componentId": "Inbox/Loaded",
+          "preview": "ThunderbirdInboxLoadedCatalogPreview",
+          "select": {
+            "size": "phone"
+          },
+          "caption": "The real message list with empty, sent, conversation, active-message, and multi-account preview data."
         },
         {
-          "componentId": "Buttons/Outlined",
-          "priority": "deferred",
-          "preview": "ButtonOutlinedPreview",
-          "caption": "Outlined secondary action.",
-          "variants": [
-            {
-              "preview": "ButtonOutlinedDisabledPreview",
-              "state": "disabled"
-            },
-            {
-              "preview": "ButtonOutlinedIconPreview",
-              "props": {
-                "content": "icon and label"
-              }
-            }
-          ]
+          "componentId": "Inbox/Searching",
+          "preview": "ThunderbirdInboxSearchingCatalogPreview",
+          "select": {
+            "size": "phone"
+          },
+          "caption": "Local search, server search, and no-results states."
         },
         {
-          "componentId": "Buttons/Tonal",
-          "priority": "deferred",
-          "preview": "ButtonFilledTonalPreview",
-          "caption": "Lower-emphasis filled tonal action.",
-          "variants": [
-            {
-              "preview": "ButtonFilledTonalDisabledPreview",
-              "state": "disabled"
-            }
-          ]
+          "componentId": "Inbox/Selecting",
+          "preview": "ThunderbirdInboxSelectingCatalogPreview",
+          "select": {
+            "size": "phone"
+          },
+          "caption": "Message selection mode with multiple selected messages."
         },
         {
-          "componentId": "Buttons/Text",
-          "priority": "deferred",
-          "preview": "ButtonTextPreview",
-          "caption": "Lowest-emphasis text action.",
-          "variants": [
-            {
-              "preview": "ButtonTextDisabledPreview",
-              "state": "disabled"
-            },
-            {
-              "preview": "ButtonTextColoredPreview",
-              "props": {
-                "color": "custom"
-              }
-            }
-          ]
+          "componentId": "Inbox/Loading",
+          "preview": "ThunderbirdInboxLoadingCatalogPreview",
+          "select": {
+            "size": "phone"
+          },
+          "caption": "Initial, progress, pull-to-refresh, and remote-loading states."
         },
         {
-          "componentId": "Buttons/Segmented single choice",
-          "priority": "deferred",
-          "preview": "ButtonSegmentedSingleChoicePreview",
-          "caption": "Single-choice segmented control.",
-          "variants": [
-            {
-              "preview": "ButtonSegmentedSingleChoiceWithSelectionPreview",
-              "state": "selected"
-            },
-            {
-              "preview": "ButtonSegmentedSingleChoiceEmptyPreview",
-              "state": "empty"
-            }
-          ]
+          "componentId": "Inbox/Warming up",
+          "preview": "ThunderbirdInboxWarmingUpCatalogPreview",
+          "select": {
+            "size": "phone"
+          },
+          "caption": "The startup state before the local message list is ready."
         }
       ]
     },
     {
-      "name": "Selection controls",
-      "section": "Atoms",
+      "name": "Responsive layouts",
+      "section": "Screens",
       "components": [
         {
-          "componentId": "Selection/Checkbox",
-          "preview": "CheckboxPreview",
-          "variants": [
-            {
-              "preview": "CheckboxDisabledPreview",
-              "state": "disabled"
-            }
-          ]
+          "componentId": "Inbox/Phone layout",
+          "preview": "ThunderbirdInboxPhoneLayoutCatalogPreview",
+          "select": {
+            "size": "phone"
+          },
+          "caption": "Compact message-list layout on a phone."
         },
         {
-          "componentId": "Selection/Switch",
-          "priority": "deferred",
-          "preview": "SwitchPreview",
-          "variants": [
-            {
-              "preview": "SwitchDisabledPreview",
-              "state": "disabled"
-            }
-          ]
-        },
-        {
-          "componentId": "Selection/Radio group",
-          "priority": "deferred",
-          "preview": "RadioGroupSelectedPreview",
-          "variants": [
-            {
-              "preview": "RadioGroupUnSelectedPreview",
-              "state": "unselected"
-            }
-          ]
+          "componentId": "Inbox/Tablet layout",
+          "preview": "ThunderbirdInboxTabletLayoutCatalogPreview",
+          "select": {
+            "size": "tabletLandscape"
+          },
+          "caption": "Expanded message-list layout on a landscape tablet."
         }
       ]
     },
     {
-      "name": "Inputs",
-      "section": "Atoms",
+      "name": "Preferences",
+      "section": "Screens",
       "components": [
         {
-          "componentId": "Inputs/Outlined text field",
-          "priority": "deferred",
-          "preview": "TextFieldOutlinedPreview",
-          "variants": [
-            {
-              "preview": "TextFieldOutlinedWithLabelPreview",
-              "props": {
-                "label": "set"
-              }
-            },
-            {
-              "preview": "TextFieldOutlinedErrorPreview",
-              "state": "error"
-            },
-            {
-              "preview": "TextFieldOutlinedDisabledPreview",
-              "state": "disabled"
-            }
-          ]
+          "componentId": "Inbox/Display density",
+          "preview": "ThunderbirdInboxDensityCatalogPreview",
+          "select": {
+            "size": "phone"
+          },
+          "caption": "Default, compact, and relaxed message-list density settings."
         },
         {
-          "componentId": "Inputs/Email address",
-          "priority": "deferred",
-          "preview": "EmailAddressInputPreview",
-          "variants": [
-            {
-              "preview": "EmailAddressInputWithErrorPreview",
-              "state": "error"
-            }
-          ]
-        },
-        {
-          "componentId": "Inputs/Password",
-          "priority": "deferred",
-          "preview": "PasswordInputPreview",
-          "variants": [
-            {
-              "preview": "PasswordInputWithErrorPreview",
-              "state": "error"
-            }
-          ]
-        },
-        {
-          "componentId": "Inputs/Select",
-          "priority": "deferred",
-          "preview": "SelectInputPreview"
+          "componentId": "Inbox/Footer behavior",
+          "preview": "ThunderbirdInboxFooterCatalogPreview",
+          "select": {
+            "size": "phone"
+          },
+          "caption": "Message-list footer behavior under the supported preference combinations."
         }
       ]
     },
     {
-      "name": "Cards and surfaces",
-      "section": "Atoms",
+      "name": "Dialogs",
+      "section": "Components",
       "components": [
         {
-          "componentId": "Cards/Filled",
-          "preview": "CardFilledPreview"
-        },
-        {
-          "componentId": "Cards/Elevated",
-          "priority": "deferred",
-          "preview": "CardElevatedPreview"
-        },
-        {
-          "componentId": "Cards/Outlined",
-          "priority": "deferred",
-          "preview": "CardOutlinedPreview"
-        },
-        {
-          "componentId": "Surfaces/Surface",
-          "priority": "deferred",
-          "preview": "SurfacePreview",
-          "variants": [
-            {
-              "preview": "SurfaceWithShapePreview",
-              "props": {
-                "shape": "custom"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Navigation",
-      "section": "Molecules",
-      "components": [
-        {
-          "componentId": "Navigation/Primary tab row",
-          "priority": "deferred",
-          "preview": "TabRowPrimaryPreview",
-          "variants": [
-            {
-              "preview": "TabRowPrimaryIndicatorChangesPreview",
-              "state": "selection changed"
-            }
-          ]
-        },
-        {
-          "componentId": "Navigation/Drawer item",
-          "priority": "deferred",
-          "preview": "NavigationDrawerItemUnselectedPreview",
-          "variants": [
-            {
-              "preview": "NavigationDrawerItemSelectedPreview",
-              "state": "selected"
-            },
-            {
-              "preview": "NavigationDrawerItemWithLabelBadgePreview",
-              "props": {
-                "content": "label and badge"
-              }
-            }
-          ]
-        },
-        {
-          "componentId": "Navigation/Subtitle top app bar",
-          "priority": "deferred",
-          "preview": "SubtitleTopAppBarPreview",
-          "variants": [
-            {
-              "preview": "SubtitleTopAppBarWithBackButtonPreview",
-              "props": {
-                "navigation": "back"
-              }
-            },
-            {
-              "preview": "SubtitleTopAppBarWithActionsPreview",
-              "props": {
-                "actions": "set"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Feedback",
-      "section": "Organisms",
-      "components": [
-        {
-          "componentId": "Feedback/Inline banner",
-          "priority": "deferred",
-          "preview": "InfoBannerInlineNotificationCardPreviewPreview",
-          "variants": [
-            {
-              "preview": "SuccessBannerInlineNotificationCardPreviewPreview",
-              "state": "success"
-            },
-            {
-              "preview": "ErrorBannerInlineNotificationCardPreviewPreview",
-              "state": "error"
-            }
-          ]
-        },
-        {
-          "componentId": "Feedback/Global banner",
-          "priority": "deferred",
-          "preview": "InfoBannerGlobalNotificationCardStringTitlePreview",
-          "variants": [
-            {
-              "preview": "SuccessBannerGlobalNotificationCardStringTitlePreview",
-              "state": "success"
-            },
-            {
-              "preview": "ErrorBannerGlobalNotificationCardStringTitlePreview",
-              "state": "error"
-            }
-          ]
-        },
-        {
-          "componentId": "Feedback/Error view",
-          "priority": "deferred",
-          "preview": "ErrorViewPreview",
-          "variants": [
-            {
-              "preview": "ErrorViewWithRetryAndMessagePreview",
-              "props": {
-                "content": "message and retry"
-              }
-            }
-          ]
-        },
-        {
-          "componentId": "Feedback/Alert dialog",
-          "priority": "deferred",
-          "preview": "AlertDialogPreview",
-          "variants": [
-            {
-              "preview": "AlertDialogWithIconPreview",
-              "props": {
-                "icon": "set"
-              }
-            },
-            {
-              "preview": "AlertDialogWithCancelPreview",
-              "props": {
-                "cancelAction": "set"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "name": "Typography",
-      "section": "Foundations",
-      "components": [
-        {
-          "componentId": "Typography/Display large",
-          "priority": "deferred",
-          "preview": "TextDisplayLargePreview"
-        },
-        {
-          "componentId": "Typography/Headline medium",
-          "priority": "deferred",
-          "preview": "TextHeadlineMediumPreview"
-        },
-        {
-          "componentId": "Typography/Body medium",
-          "priority": "deferred",
-          "preview": "TextBodyMediumPreview"
-        },
-        {
-          "componentId": "Typography/Label large",
-          "priority": "deferred",
-          "preview": "TextLabelLargePreview"
-        }
-      ]
-    },
-    {
-      "name": "Templates",
-      "section": "Templates",
-      "components": [
-        {
-          "componentId": "Templates/List detail pane",
-          "priority": "deferred",
-          "preview": "ListDetailPanePreview",
-          "caption": "Responsive list-detail layout across Bolt's device previews."
-        },
-        {
-          "componentId": "Templates/Scaffold",
-          "priority": "deferred",
-          "preview": "ScaffoldPreview",
-          "variants": [
-            {
-              "preview": "ScaffoldWitFabPreview",
-              "props": {
-                "fab": "set"
-              }
-            }
-          ]
-        },
-        {
-          "componentId": "Templates/Responsive width container",
-          "preview": "ResponsiveWidthContainerPreview",
-          "priority": "deferred"
+          "componentId": "Archive folder/Setup dialog",
+          "preview": "ThunderbirdArchiveFolderSetupCatalogPreview",
+          "caption": "Cannot-archive, choose-folder, loading, populated-folder, and create-folder states."
         }
       ]
     }

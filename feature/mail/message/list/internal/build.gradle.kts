@@ -1,5 +1,6 @@
 plugins {
     id(ThunderbirdPlugins.Library.androidCompose)
+    id("thunderbird.preview.renderer")
 }
 
 android {

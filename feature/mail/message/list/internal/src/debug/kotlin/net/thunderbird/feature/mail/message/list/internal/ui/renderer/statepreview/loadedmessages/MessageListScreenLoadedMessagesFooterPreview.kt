@@ -1,6 +1,7 @@
 package net.thunderbird.feature.mail.message.list.internal.ui.renderer.statepreview.loadedmessages
 
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.PreviewScreenSizes
@@ -82,4 +83,12 @@ private fun MessageListScreenLoadedMessagesFooterPreview(
             }
         }
     }
+}
+
+@Preview(name = "Catalog - Phone", device = "spec:width=411dp,height=891dp,dpi=420", showSystemUi = true)
+@Composable
+private fun ThunderbirdInboxFooterCatalogPreview() {
+    MessageListScreenLoadedMessagesFooterPreview(
+        params = MessageListScreenLoadedMessagesFooterPreviewParamsProvider().params.first(),
+    )
 }
