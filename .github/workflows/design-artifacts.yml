@@ -28,21 +28,115 @@ concurrency:
 jobs:
   publish:
     if: ${{ github.repository == 'yschimke/thunderbird-android' }}
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
     permissions:
       contents: write
-    uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
-    with:
-      system: thunderbird
-      spec: catalog.spec.json
-      module: ':ui:bolt'
-      working-directory: components
-      preview-annotations: 'PreviewDevices PreviewDevicesWithBackground PreviewLightDark PreviewLightDarkLandscape'
-      desktop-render: true
-      cli-version: catalog
-      catalog-key: composeAiPreview
-      publish-live-bundle: true
-      split-per-preview: true
-      split-mode: full
-      commit-user-name: Yuri Schimke
-      commit-user-email: yuri@schimke.ee
-      timeout-minutes: 90
+    env:
+      LANG: C.UTF-8
+      LC_ALL: C.UTF-8
+    steps:
+      - name: Check out previews branch
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@b6effb05e454b25005698d916606bdc6ffcbf961 # v5.7.0
+        with:
+          distribution: temurin
+          java-version: '21'
+
+      - name: Install compose-preview CLI
+        uses: yschimke/compose-ai-tools/.github/actions/install@main
+        with:
+          version: catalog
+          catalog-key: composeAiPreview
+          catalog-path: gradle/libs.versions.toml
+          github-token: ${{ github.token }}
+
+      - name: Check out compose-ai-tools export driver
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          repository: yschimke/compose-ai-tools
+          ref: main
+          path: compose-ai-tools
+          persist-credentials: false
+
+      - name: Set up Node
+        uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 24
+
+      - name: Install export engine
+        working-directory: compose-ai-tools/scripts/design-artifacts
+        run: npm ci --no-audit --no-fund --loglevel=warn
+
+      - name: Validate catalog spec
+        id: validate-spec
+        run: |
+          set -euo pipefail
+          args=(
+            --spec catalog.spec.json
+            --module-dir components/ui/bolt
+            --live-bundle
+            --render-filter-out "$GITHUB_WORKSPACE/render-filter.txt"
+          )
+          for annotation in PreviewDevices PreviewDevicesWithBackground PreviewLightDark PreviewLightDarkLandscape; do
+            args+=(--preview-annotation "$annotation")
+          done
+          node compose-ai-tools/scripts/design-artifacts/validate-catalog-spec.mjs "${args[@]}"
+          echo "render-filter=$(cat "$GITHUB_WORKSPACE/render-filter.txt")" >> "$GITHUB_OUTPUT"
+
+      - name: Install desktop render dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y -qq --no-install-recommends \
+            xvfb libgl1 libglx-mesa0 libgl1-mesa-dri libfreetype6 libfontconfig1 fontconfig
+
+      # Bolt exposes hundreds of previews. Entry filtering narrows the raster pass, but the
+      # reusable workflow's --with-semantics capture currently traverses every discovered id and
+      # exceeds its hard 600-second CLI timeout. Generate the same compose-ai-tools bundle without
+      # that optional sidecar; --allow-incomplete below records the missing semantics explicitly.
+      - name: Render catalog bundle
+        working-directory: components
+        env:
+          ORG_GRADLE_PROJECT_composePreview.filter: ${{ steps.validate-spec.outputs.render-filter }}
+        run: |
+          xvfb-run -a -s "-screen 0 2000x1400x24" \
+            compose-preview bundle pack --module :ui:bolt --progress \
+            -o "$GITHUB_WORKSPACE/bundle.png" --timeout 1800
+
+      - name: Generate importable catalog
+        run: |
+          node compose-ai-tools/scripts/design-artifacts/generate-design-catalog.mjs \
+            --spec catalog.spec.json \
+            --renders "$GITHUB_WORKSPACE/bundle.png" \
+            --out "$GITHUB_WORKSPACE/out" \
+            --renderer "$(compose-preview --version | head -1)" \
+            --source-repo "$GITHUB_REPOSITORY" \
+            --source-ref previews \
+            --source-module :ui:bolt \
+            --publish-live-bundle \
+            --allow-incomplete
+
+      - name: Split into per-preview bundles
+        run: |
+          compose-preview bundle split "$GITHUB_WORKSPACE/out/bundle/bundle.png" \
+            -o "$GITHUB_WORKSPACE/out/bundle/previews"
+
+      - name: Publish design-artifacts/thunderbird
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          set -euo pipefail
+          cd "$GITHUB_WORKSPACE/out"
+          git init -q
+          git checkout -q -b design-artifacts/thunderbird
+          git config user.name 'Yuri Schimke'
+          git config user.email 'yuri@schimke.ee'
+          git add -A
+          git commit -q -m "chore(design-artifacts): regenerate thunderbird catalog ($(date -u +%F))"
+          git push --force \
+            "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git" \
+            HEAD:refs/heads/design-artifacts/thunderbird
