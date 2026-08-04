@@ -50,6 +50,7 @@
         },
         {
           "componentId": "Buttons/Outlined",
+          "priority": "deferred",
           "preview": "ButtonOutlinedPreview",
           "caption": "Outlined secondary action.",
           "variants": [
@@ -67,6 +68,7 @@
         },
         {
           "componentId": "Buttons/Tonal",
+          "priority": "deferred",
           "preview": "ButtonFilledTonalPreview",
           "caption": "Lower-emphasis filled tonal action.",
           "variants": [
@@ -78,6 +80,7 @@
         },
         {
           "componentId": "Buttons/Text",
+          "priority": "deferred",
           "preview": "ButtonTextPreview",
           "caption": "Lowest-emphasis text action.",
           "variants": [
@@ -95,6 +98,7 @@
         },
         {
           "componentId": "Buttons/Segmented single choice",
+          "priority": "deferred",
           "preview": "ButtonSegmentedSingleChoicePreview",
           "caption": "Single-choice segmented control.",
           "variants": [
@@ -126,6 +130,7 @@
         },
         {
           "componentId": "Selection/Switch",
+          "priority": "deferred",
           "preview": "SwitchPreview",
           "variants": [
             {
@@ -136,6 +141,7 @@
         },
         {
           "componentId": "Selection/Radio group",
+          "priority": "deferred",
           "preview": "RadioGroupSelectedPreview",
           "variants": [
             {
@@ -152,6 +158,7 @@
       "components": [
         {
           "componentId": "Inputs/Outlined text field",
+          "priority": "deferred",
           "preview": "TextFieldOutlinedPreview",
           "variants": [
             {
@@ -172,6 +179,7 @@
         },
         {
           "componentId": "Inputs/Email address",
+          "priority": "deferred",
           "preview": "EmailAddressInputPreview",
           "variants": [
             {
@@ -182,6 +190,7 @@
         },
         {
           "componentId": "Inputs/Password",
+          "priority": "deferred",
           "preview": "PasswordInputPreview",
           "variants": [
             {
@@ -192,6 +201,7 @@
         },
         {
           "componentId": "Inputs/Select",
+          "priority": "deferred",
           "preview": "SelectInputPreview"
         }
       ]
@@ -206,14 +216,17 @@
         },
         {
           "componentId": "Cards/Elevated",
+          "priority": "deferred",
           "preview": "CardElevatedPreview"
         },
         {
           "componentId": "Cards/Outlined",
+          "priority": "deferred",
           "preview": "CardOutlinedPreview"
         },
         {
           "componentId": "Surfaces/Surface",
+          "priority": "deferred",
           "preview": "SurfacePreview",
           "variants": [
             {
@@ -232,6 +245,7 @@
       "components": [
         {
           "componentId": "Navigation/Primary tab row",
+          "priority": "deferred",
           "preview": "TabRowPrimaryPreview",
           "variants": [
             {
@@ -242,6 +256,7 @@
         },
         {
           "componentId": "Navigation/Drawer item",
+          "priority": "deferred",
           "preview": "NavigationDrawerItemUnselectedPreview",
           "variants": [
             {
@@ -258,6 +273,7 @@
         },
         {
           "componentId": "Navigation/Subtitle top app bar",
+          "priority": "deferred",
           "preview": "SubtitleTopAppBarPreview",
           "variants": [
             {
@@ -296,6 +312,7 @@
         },
         {
           "componentId": "Feedback/Global banner",
+          "priority": "deferred",
           "preview": "InfoBannerGlobalNotificationCardStringTitlePreview",
           "variants": [
             {
@@ -310,6 +327,7 @@
         },
         {
           "componentId": "Feedback/Error view",
+          "priority": "deferred",
           "preview": "ErrorViewPreview",
           "variants": [
             {
@@ -322,6 +340,7 @@
         },
         {
           "componentId": "Feedback/Alert dialog",
+          "priority": "deferred",
           "preview": "AlertDialogPreview",
           "variants": [
             {
@@ -346,18 +365,22 @@
       "components": [
         {
           "componentId": "Typography/Display large",
+          "priority": "deferred",
           "preview": "TextDisplayLargePreview"
         },
         {
           "componentId": "Typography/Headline medium",
+          "priority": "deferred",
           "preview": "TextHeadlineMediumPreview"
         },
         {
           "componentId": "Typography/Body medium",
+          "priority": "deferred",
           "preview": "TextBodyMediumPreview"
         },
         {
           "componentId": "Typography/Label large",
+          "priority": "deferred",
           "preview": "TextLabelLargePreview"
         }
       ]
@@ -373,6 +396,7 @@
         },
         {
           "componentId": "Templates/Scaffold",
+          "priority": "deferred",
           "preview": "ScaffoldPreview",
           "variants": [
             {
