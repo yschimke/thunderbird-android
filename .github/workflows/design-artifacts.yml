@@ -1,0 +1,48 @@
+name: Design Artifacts
+
+# Render the downstream Bolt catalog and publish an importable bundle to
+# design-artifacts/thunderbird. That delivery branch is consumed by preview.coo.ee.
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - previews
+    paths:
+      - 'catalog.spec.json'
+      - 'components/ui/bolt/src/**'
+      - 'components/ui/bolt/build.gradle.kts'
+      - 'components/gradlew'
+      - 'build-plugin/build.gradle.kts'
+      - 'build-plugin/src/main/kotlin/thunderbird.preview.renderer.gradle.kts'
+      - 'gradle/libs.versions.toml'
+      - '.github/workflows/design-artifacts.yml'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: design-artifacts-${{ github.ref }}
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    if: ${{ github.repository == 'yschimke/thunderbird-android' }}
+    permissions:
+      contents: write
+    uses: yschimke/compose-ai-tools/.github/workflows/design-artifacts-reusable.yml@main
+    with:
+      system: thunderbird
+      spec: catalog.spec.json
+      module: ':ui:bolt'
+      working-directory: components
+      preview-annotations: 'PreviewDevices PreviewDevicesWithBackground PreviewLightDark PreviewLightDarkLandscape'
+      desktop-render: true
+      cli-version: catalog
+      catalog-key: composeAiPreview
+      publish-live-bundle: true
+      split-per-preview: true
+      split-mode: full
+      commit-user-name: Yuri Schimke
+      commit-user-email: yuri@schimke.ee
+      timeout-minutes: 90

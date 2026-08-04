@@ -1,0 +1,6 @@
+#!/bin/sh
+
+# Keep the independently buildable components project compatible with tools that
+# locate a Gradle build by walking up for a wrapper.
+components_dir=$(CDPATH= cd -- "$(dirname -- "$0")" && pwd)
+exec "$components_dir/../gradlew" -p "$components_dir" "$@"

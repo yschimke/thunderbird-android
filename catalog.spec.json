@@ -1,0 +1,393 @@
+{
+  "$schema": "https://raw.githubusercontent.com/yschimke/compose-ai-tools/main/scripts/design-artifacts/catalog.spec.schema.json",
+  "$comment": "Thunderbird for Android's Bolt design-system catalog. Bolt is an Atomic Design Compose Multiplatform library shared by Thunderbird and K-9 Mail. Its previews live in commonMain, render through Compose Desktop, and generally show the Thunderbird and K-9 Mail light/dark palettes together so downstream design review covers both white-label applications.",
+  "system": "thunderbird",
+  "title": "Thunderbird for Android",
+  "library": [
+    "Bolt",
+    "Compose Material 3"
+  ],
+  "module": ":ui:bolt",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "display": {
+    "surface": "light",
+    "hero": "Templates/List detail pane"
+  },
+  "groupOrder": [
+    "Buttons",
+    "Selection controls",
+    "Inputs",
+    "Cards and surfaces",
+    "Navigation",
+    "Feedback",
+    "Typography",
+    "Templates"
+  ],
+  "groups": [
+    {
+      "name": "Buttons",
+      "section": "Atoms",
+      "components": [
+        {
+          "componentId": "Buttons/Filled",
+          "preview": "ButtonFilledPreview",
+          "caption": "Primary filled action in Thunderbird and K-9 Mail themes.",
+          "variants": [
+            {
+              "preview": "ButtonFilledDisabledPreview",
+              "state": "disabled"
+            },
+            {
+              "preview": "ButtonFilledMultiLinePreview",
+              "props": {
+                "label": "multi-line"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Buttons/Outlined",
+          "preview": "ButtonOutlinedPreview",
+          "caption": "Outlined secondary action.",
+          "variants": [
+            {
+              "preview": "ButtonOutlinedDisabledPreview",
+              "state": "disabled"
+            },
+            {
+              "preview": "ButtonOutlinedIconPreview",
+              "props": {
+                "content": "icon and label"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Buttons/Tonal",
+          "preview": "ButtonFilledTonalPreview",
+          "caption": "Lower-emphasis filled tonal action.",
+          "variants": [
+            {
+              "preview": "ButtonFilledTonalDisabledPreview",
+              "state": "disabled"
+            }
+          ]
+        },
+        {
+          "componentId": "Buttons/Text",
+          "preview": "ButtonTextPreview",
+          "caption": "Lowest-emphasis text action.",
+          "variants": [
+            {
+              "preview": "ButtonTextDisabledPreview",
+              "state": "disabled"
+            },
+            {
+              "preview": "ButtonTextColoredPreview",
+              "props": {
+                "color": "custom"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Buttons/Segmented single choice",
+          "preview": "ButtonSegmentedSingleChoicePreview",
+          "caption": "Single-choice segmented control.",
+          "variants": [
+            {
+              "preview": "ButtonSegmentedSingleChoiceWithSelectionPreview",
+              "state": "selected"
+            },
+            {
+              "preview": "ButtonSegmentedSingleChoiceEmptyPreview",
+              "state": "empty"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Selection controls",
+      "section": "Atoms",
+      "components": [
+        {
+          "componentId": "Selection/Checkbox",
+          "preview": "CheckboxPreview",
+          "variants": [
+            {
+              "preview": "CheckboxDisabledPreview",
+              "state": "disabled"
+            }
+          ]
+        },
+        {
+          "componentId": "Selection/Switch",
+          "preview": "SwitchPreview",
+          "variants": [
+            {
+              "preview": "SwitchDisabledPreview",
+              "state": "disabled"
+            }
+          ]
+        },
+        {
+          "componentId": "Selection/Radio group",
+          "preview": "RadioGroupSelectedPreview",
+          "variants": [
+            {
+              "preview": "RadioGroupUnSelectedPreview",
+              "state": "unselected"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Inputs",
+      "section": "Atoms",
+      "components": [
+        {
+          "componentId": "Inputs/Outlined text field",
+          "preview": "TextFieldOutlinedPreview",
+          "variants": [
+            {
+              "preview": "TextFieldOutlinedWithLabelPreview",
+              "props": {
+                "label": "set"
+              }
+            },
+            {
+              "preview": "TextFieldOutlinedErrorPreview",
+              "state": "error"
+            },
+            {
+              "preview": "TextFieldOutlinedDisabledPreview",
+              "state": "disabled"
+            }
+          ]
+        },
+        {
+          "componentId": "Inputs/Email address",
+          "preview": "EmailAddressInputPreview",
+          "variants": [
+            {
+              "preview": "EmailAddressInputWithErrorPreview",
+              "state": "error"
+            }
+          ]
+        },
+        {
+          "componentId": "Inputs/Password",
+          "preview": "PasswordInputPreview",
+          "variants": [
+            {
+              "preview": "PasswordInputWithErrorPreview",
+              "state": "error"
+            }
+          ]
+        },
+        {
+          "componentId": "Inputs/Select",
+          "preview": "SelectInputPreview"
+        }
+      ]
+    },
+    {
+      "name": "Cards and surfaces",
+      "section": "Atoms",
+      "components": [
+        {
+          "componentId": "Cards/Filled",
+          "preview": "CardFilledPreview"
+        },
+        {
+          "componentId": "Cards/Elevated",
+          "preview": "CardElevatedPreview"
+        },
+        {
+          "componentId": "Cards/Outlined",
+          "preview": "CardOutlinedPreview"
+        },
+        {
+          "componentId": "Surfaces/Surface",
+          "preview": "SurfacePreview",
+          "variants": [
+            {
+              "preview": "SurfaceWithShapePreview",
+              "props": {
+                "shape": "custom"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Navigation",
+      "section": "Molecules",
+      "components": [
+        {
+          "componentId": "Navigation/Primary tab row",
+          "preview": "TabRowPrimaryPreview",
+          "variants": [
+            {
+              "preview": "TabRowPrimaryIndicatorChangesPreview",
+              "state": "selection changed"
+            }
+          ]
+        },
+        {
+          "componentId": "Navigation/Drawer item",
+          "preview": "NavigationDrawerItemUnselectedPreview",
+          "variants": [
+            {
+              "preview": "NavigationDrawerItemSelectedPreview",
+              "state": "selected"
+            },
+            {
+              "preview": "NavigationDrawerItemWithLabelBadgePreview",
+              "props": {
+                "content": "label and badge"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Navigation/Subtitle top app bar",
+          "preview": "SubtitleTopAppBarPreview",
+          "variants": [
+            {
+              "preview": "SubtitleTopAppBarWithBackButtonPreview",
+              "props": {
+                "navigation": "back"
+              }
+            },
+            {
+              "preview": "SubtitleTopAppBarWithActionsPreview",
+              "props": {
+                "actions": "set"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Feedback",
+      "section": "Organisms",
+      "components": [
+        {
+          "componentId": "Feedback/Inline banner",
+          "preview": "InfoBannerInlineNotificationCardPreviewPreview",
+          "variants": [
+            {
+              "preview": "SuccessBannerInlineNotificationCardPreviewPreview",
+              "state": "success"
+            },
+            {
+              "preview": "ErrorBannerInlineNotificationCardPreviewPreview",
+              "state": "error"
+            }
+          ]
+        },
+        {
+          "componentId": "Feedback/Global banner",
+          "preview": "InfoBannerGlobalNotificationCardStringTitlePreview",
+          "variants": [
+            {
+              "preview": "SuccessBannerGlobalNotificationCardStringTitlePreview",
+              "state": "success"
+            },
+            {
+              "preview": "ErrorBannerGlobalNotificationCardStringTitlePreview",
+              "state": "error"
+            }
+          ]
+        },
+        {
+          "componentId": "Feedback/Error view",
+          "preview": "ErrorViewPreview",
+          "variants": [
+            {
+              "preview": "ErrorViewWithRetryAndMessagePreview",
+              "props": {
+                "content": "message and retry"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Feedback/Alert dialog",
+          "preview": "AlertDialogPreview",
+          "variants": [
+            {
+              "preview": "AlertDialogWithIconPreview",
+              "props": {
+                "icon": "set"
+              }
+            },
+            {
+              "preview": "AlertDialogWithCancelPreview",
+              "props": {
+                "cancelAction": "set"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Typography",
+      "section": "Foundations",
+      "components": [
+        {
+          "componentId": "Typography/Display large",
+          "preview": "TextDisplayLargePreview"
+        },
+        {
+          "componentId": "Typography/Headline medium",
+          "preview": "TextHeadlineMediumPreview"
+        },
+        {
+          "componentId": "Typography/Body medium",
+          "preview": "TextBodyMediumPreview"
+        },
+        {
+          "componentId": "Typography/Label large",
+          "preview": "TextLabelLargePreview"
+        }
+      ]
+    },
+    {
+      "name": "Templates",
+      "section": "Templates",
+      "components": [
+        {
+          "componentId": "Templates/List detail pane",
+          "preview": "ListDetailPanePreview",
+          "caption": "Responsive list-detail layout across Bolt's device previews."
+        },
+        {
+          "componentId": "Templates/Scaffold",
+          "preview": "ScaffoldPreview",
+          "variants": [
+            {
+              "preview": "ScaffoldWitFabPreview",
+              "props": {
+                "fab": "set"
+              }
+            }
+          ]
+        },
+        {
+          "componentId": "Templates/Responsive width container",
+          "preview": "ResponsiveWidthContainerPreview"
+        }
+      ]
+    }
+  ]
+}

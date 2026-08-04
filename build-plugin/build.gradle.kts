@@ -14,6 +14,10 @@ dependencies {
     implementation(plugin(libs.plugins.android.library))
 
     implementation(plugin(libs.plugins.compose))
+    implementation(
+        "ee.schimke.composeai.preview:ee.schimke.composeai.preview.gradle.plugin:" +
+            libs.versions.composeAiPreview.get(),
+    )
 
     implementation(plugin(libs.plugins.jetbrains.compose))
 

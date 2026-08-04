@@ -1,5 +1,6 @@
 plugins {
     id("thunderbird.library.kmp.compose")
+    id("thunderbird.preview.renderer")
 }
 
 group = "net.thunderbird.components.ui.bolt"
@@ -34,6 +35,10 @@ kotlin {
         androidMain.dependencies {
             implementation(libs.android.material)
             implementation(libs.androidx.autofill)
+        }
+
+        jvmMain.dependencies {
+            implementation(compose.desktop.currentOs)
         }
     }
 }
