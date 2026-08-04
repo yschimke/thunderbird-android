@@ -385,7 +385,8 @@
         },
         {
           "componentId": "Templates/Responsive width container",
-          "preview": "ResponsiveWidthContainerPreview"
+          "preview": "ResponsiveWidthContainerPreview",
+          "priority": "deferred"
         }
       ]
     }
