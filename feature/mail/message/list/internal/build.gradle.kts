@@ -29,6 +29,8 @@ dependencies {
     implementation(projects.legacy.mailstore)
     implementation(projects.mail.common)
 
+    debugImplementation(libs.compose.ai.preview.annotations)
+
     testImplementation(projects.core.logging.testing)
     testImplementation(projects.core.ui.compose.testing)
     testImplementation(projects.feature.notification.testing)

@@ -146,6 +146,12 @@ jobs:
           if [[ -z "$filter" ]]; then
             filter="$SPEC_FILTER"
           fi
+          theme_filter='Thunderbird Light theme,Thunderbird Dark theme,K-9 Mail Light theme,K-9 Mail Dark theme'
+          if [[ -n "$filter" ]]; then
+            filter="$filter,$theme_filter"
+          else
+            filter="$theme_filter"
+          fi
           command=(
             compose-preview bundle pack
             --module "$MODULE"

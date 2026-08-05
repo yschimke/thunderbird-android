@@ -7,8 +7,9 @@ import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.tooling.preview.PreviewLightDark
 import androidx.compose.ui.tooling.preview.PreviewParameter
 import androidx.compose.ui.tooling.preview.datasource.CollectionPreviewParameterProvider
+import net.thunderbird.components.ui.bolt.PreviewThemeType
+import net.thunderbird.components.ui.bolt.PreviewWithTheme
 import net.thunderbird.components.ui.bolt.atom.Surface
-import net.thunderbird.components.ui.bolt.theme.thunderbird.ThunderbirdBoltTheme
 import net.thunderbird.feature.mail.folder.api.FolderType
 import net.thunderbird.feature.mail.folder.api.RemoteFolder
 import net.thunderbird.feature.mail.message.list.internal.ui.dialog.SetupArchiveFolderDialog
@@ -41,7 +42,7 @@ private class SetupArchiveFolderDialogParamCol : CollectionPreviewParameterProvi
 private fun SetupArchiveFolderDialogPreview(
     @PreviewParameter(SetupArchiveFolderDialogParamCol::class) state: State,
 ) {
-    ThunderbirdBoltTheme {
+    PreviewWithTheme(themeType = PreviewThemeType.THUNDERBIRD) {
         Surface(modifier = Modifier.fillMaxSize()) {
             SetupArchiveFolderDialog(state = state)
         }

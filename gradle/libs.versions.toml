@@ -217,6 +217,7 @@ circleImageView = { module = "de.hdodenhof:circleimageview", version.ref = "circ
 ckchangelog-core = { module = "de.cketti.library.changelog:ckchangelog-core", version.ref = "ckchangelog" }
 clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
 commons-io = { module = "commons-io:commons-io", version.ref = "commonsIo" }
+compose-ai-preview-annotations = { module = "ee.schimke.composeai:preview-annotations", version.ref = "composeAiPreview" }
 detekt-plugin-compose = { module = "io.nlopez.compose.rules:detekt", version.ref = "detektPluginCompose" }
 diff-utils = { module = "io.github.java-diff-utils:java-diff-utils", version.ref = "javaDiffUtils" }
 fastadapter = { module = "com.mikepenz:fastadapter", version.ref = "fastAdapter" }

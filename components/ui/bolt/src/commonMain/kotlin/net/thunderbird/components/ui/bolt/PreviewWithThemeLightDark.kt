@@ -40,6 +40,11 @@ fun PreviewWithThemesLightDark(
     arrangement: Arrangement.HorizontalOrVertical = Arrangement.spacedBy(24.dp),
     content: @Composable () -> Unit,
 ) {
+    if (LocalPreviewThemeCatalogActive.current) {
+        PreviewSurface(content = content)
+        return
+    }
+
     val movableContent = remember {
         movableContentOf {
             PreviewWithThemeLightDark(
@@ -85,6 +90,11 @@ fun PreviewWithThemeLightDark(
     scrimPadding: PaddingValues = PaddingValues(0.dp),
     content: @Composable (() -> Unit),
 ) {
+    if (LocalPreviewThemeCatalogActive.current) {
+        PreviewSurface(content = content)
+        return
+    }
+
     val movableContent = remember { movableContentOf { content() } }
     PreviewWithTheme(
         themeType = themeType,

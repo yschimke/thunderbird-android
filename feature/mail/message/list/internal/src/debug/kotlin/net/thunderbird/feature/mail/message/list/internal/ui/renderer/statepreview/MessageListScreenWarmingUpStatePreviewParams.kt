@@ -10,7 +10,8 @@ import app.k9mail.core.ui.compose.common.koin.koinPreview
 import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.StateFlow
 import net.thunderbird.components.ui.bolt.PreviewLightDarkLandscape
-import net.thunderbird.components.ui.bolt.theme.thunderbird.ThunderbirdBoltTheme
+import net.thunderbird.components.ui.bolt.PreviewThemeType
+import net.thunderbird.components.ui.bolt.PreviewWithTheme
 import net.thunderbird.feature.mail.message.list.internal.ui.MessageListScreenPreviewParams
 import net.thunderbird.feature.mail.message.list.internal.ui.MessageListScreenPreviewParamsProvider
 import net.thunderbird.feature.mail.message.list.internal.ui.MessageListScreenRenderer
@@ -51,7 +52,7 @@ private fun MessageListScreenWarmingUpStatePreview(
             }
         }
     } WithContent {
-        ThunderbirdBoltTheme {
+        PreviewWithTheme(themeType = PreviewThemeType.THUNDERBIRD) {
             val scope = rememberMessageListScope()
             with(renderer) {
                 scope.Render(

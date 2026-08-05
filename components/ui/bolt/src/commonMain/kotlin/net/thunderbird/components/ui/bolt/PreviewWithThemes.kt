@@ -5,17 +5,26 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
+import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.staticCompositionLocalOf
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.sp
 import net.thunderbird.components.ui.bolt.theme.BoltTheme
 import net.thunderbird.components.ui.bolt.theme.k9mail.K9MailBoltTheme
 import net.thunderbird.components.ui.bolt.theme.thunderbird.ThunderbirdBoltTheme
 
+internal val LocalPreviewThemeCatalogActive = staticCompositionLocalOf { false }
+
 @Composable
 fun PreviewWithThemes(
     modifier: Modifier = Modifier,
     content: @Composable () -> Unit,
 ) {
+    if (LocalPreviewThemeCatalogActive.current) {
+        PreviewSurface(content = content)
+        return
+    }
+
     Column(
         modifier = modifier,
     ) {
@@ -65,6 +74,11 @@ fun PreviewWithTheme(
     isDarkTheme: Boolean = false,
     content: @Composable () -> Unit,
 ) {
+    if (LocalPreviewThemeCatalogActive.current) {
+        content()
+        return
+    }
+
     when (themeType) {
         PreviewThemeType.K9MAIL -> {
             PreviewWithK9MailTheme(isDarkTheme, content)
@@ -72,6 +86,27 @@ fun PreviewWithTheme(
 
         PreviewThemeType.THUNDERBIRD -> {
             PreviewWithThunderbirdTheme(isDarkTheme, content)
+        }
+    }
+}
+
+@Composable
+fun PreviewWithThemeCatalog(
+    themeType: PreviewThemeType,
+    isDarkTheme: Boolean,
+    content: @Composable () -> Unit,
+) {
+    CompositionLocalProvider(LocalPreviewThemeCatalogActive provides true) {
+        when (themeType) {
+            PreviewThemeType.K9MAIL -> K9MailBoltTheme(
+                darkTheme = isDarkTheme,
+                content = content,
+            )
+
+            PreviewThemeType.THUNDERBIRD -> ThunderbirdBoltTheme(
+                darkTheme = isDarkTheme,
+                content = content,
+            )
         }
     }
 }
