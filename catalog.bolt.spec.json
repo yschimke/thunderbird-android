@@ -149,6 +149,17 @@
               "state": "unselected"
             }
           ]
+        },
+        {
+          "componentId": "Selection/Radio button",
+          "priority": "deferred",
+          "preview": "RadioButtonPreview",
+          "variants": [
+            {
+              "preview": "RadioButtonDisabledPreview",
+              "state": "disabled"
+            }
+          ]
         }
       ]
     },
@@ -203,6 +214,11 @@
           "componentId": "Inputs/Select",
           "priority": "deferred",
           "preview": "SelectInputPreview"
+        },
+        {
+          "componentId": "Inputs/Dropdown menu",
+          "priority": "deferred",
+          "preview": "DropdownMenuBoxPreview"
         }
       ]
     },
@@ -236,6 +252,11 @@
               }
             }
           ]
+        },
+        {
+          "componentId": "Surfaces/Clickable surface",
+          "priority": "deferred",
+          "preview": "ClickableSurfacePreview"
         }
       ]
     },
@@ -289,6 +310,36 @@
               }
             }
           ]
+        },
+        {
+          "componentId": "Navigation/Swipeable row",
+          "priority": "deferred",
+          "preview": "SwipeableRowPreview"
+        },
+        {
+          "componentId": "Navigation/Modal drawer",
+          "priority": "deferred",
+          "preview": "ModalNavigationDrawerPreview"
+        },
+        {
+          "componentId": "Navigation/Drawer sheet",
+          "priority": "deferred",
+          "preview": "ModalDrawerSheetPreview"
+        },
+        {
+          "componentId": "Navigation/Drawer divider",
+          "priority": "deferred",
+          "preview": "NavigationDrawerDividerPreview"
+        },
+        {
+          "componentId": "Navigation/Drawer headline",
+          "priority": "deferred",
+          "preview": "NavigationDrawerHeadlinePreview"
+        },
+        {
+          "componentId": "Navigation/Drawer item layout",
+          "priority": "deferred",
+          "preview": "NavigationDrawerItemLayoutPreview"
         }
       ]
     },
@@ -383,6 +434,11 @@
           "componentId": "Typography/Label large",
           "priority": "deferred",
           "preview": "TextLabelLargePreview"
+        },
+        {
+          "componentId": "Typography/Auto-resizing display",
+          "priority": "deferred",
+          "preview": "TextDisplayMediumAutoResizePreview"
         }
       ]
     },
@@ -412,6 +468,11 @@
         {
           "componentId": "Templates/Responsive width container",
           "preview": "ResponsiveWidthContainerPreview",
+          "priority": "deferred"
+        },
+        {
+          "componentId": "Templates/Horizontal tab pager",
+          "preview": "HorizontalTabPagerPrimaryPreview",
           "priority": "deferred"
         }
       ]
