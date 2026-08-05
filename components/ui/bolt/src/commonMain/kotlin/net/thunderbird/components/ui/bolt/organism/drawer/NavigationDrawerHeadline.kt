@@ -4,6 +4,8 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.material3.NavigationDrawerItemDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+import net.thunderbird.components.ui.bolt.PreviewWithThemes
 import net.thunderbird.components.ui.bolt.atom.text.TextTitleSmall
 import net.thunderbird.components.ui.bolt.theme.BoltTheme
 
@@ -26,5 +28,13 @@ fun NavigationDrawerHeadline(
                 )
                 .then(modifier),
         )
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+internal fun NavigationDrawerHeadlinePreview() {
+    PreviewWithThemes {
+        NavigationDrawerHeadline(title = "Folders")
     }
 }

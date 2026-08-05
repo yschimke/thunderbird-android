@@ -12,12 +12,14 @@ import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.PreviewLightDark
+import kotlinx.coroutines.launch
+import net.thunderbird.components.ui.bolt.PreviewWithThemeLightDark
+import net.thunderbird.components.ui.bolt.atom.icon.Icon
+import net.thunderbird.components.ui.bolt.atom.tab.TabPrimary
 import net.thunderbird.components.ui.bolt.atom.text.TextBodyLarge
 import net.thunderbird.components.ui.bolt.atom.text.TextLabelSmall
 import net.thunderbird.components.ui.bolt.atom.text.TextTitleMedium
-import kotlinx.coroutines.launch
-import net.thunderbird.components.ui.bolt.atom.icon.Icon
-import net.thunderbird.components.ui.bolt.atom.tab.TabPrimary
 import net.thunderbird.components.ui.bolt.molecule.tab.TabRowPrimary
 import net.thunderbird.components.ui.bolt.theme.BoltTheme
 
@@ -118,6 +120,22 @@ fun <T> HorizontalTabPagerPrimary(
         ) { index ->
             val page = scope.pages[index]
             page.content(scope, page.value)
+        }
+    }
+}
+
+@PreviewLightDark
+@Composable
+internal fun HorizontalTabPagerPrimaryPreview() {
+    PreviewWithThemeLightDark {
+        val pages = listOf("Inbox", "Sent", "Drafts")
+        HorizontalTabPagerPrimary(initialSelected = pages.first()) {
+            pages(
+                items = pages,
+                tabConfigBuilder = { TabPrimaryConfig(title = it) },
+            ) {
+                TextBodyLarge(text = "$it messages")
+            }
         }
     }
 }

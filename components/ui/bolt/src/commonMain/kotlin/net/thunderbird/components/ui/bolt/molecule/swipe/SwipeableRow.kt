@@ -9,6 +9,7 @@ import androidx.compose.foundation.layout.BoxScope
 import androidx.compose.foundation.layout.Row
 import androidx.compose.foundation.layout.RowScope
 import androidx.compose.foundation.layout.absoluteOffset
+import androidx.compose.foundation.layout.padding
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.LaunchedEffect
 import androidx.compose.runtime.snapshotFlow
@@ -21,16 +22,21 @@ import androidx.compose.ui.platform.testTag
 import androidx.compose.ui.semantics.CustomAccessibilityAction
 import androidx.compose.ui.semantics.customActions
 import androidx.compose.ui.semantics.semantics
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import kotlin.math.roundToInt
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.drop
+import net.thunderbird.components.ui.bolt.PreviewWithThemes
+import net.thunderbird.components.ui.bolt.atom.Surface
+import net.thunderbird.components.ui.bolt.atom.text.TextBodyMedium
 import net.thunderbird.components.ui.bolt.molecule.swipe.SwipeDirection.EndToStart
 import net.thunderbird.components.ui.bolt.molecule.swipe.SwipeDirection.StartToEnd
 import net.thunderbird.components.ui.bolt.molecule.swipe.SwipeDirectionAccessibilityAction.EndToStartAccessibilityAction
 import net.thunderbird.components.ui.bolt.molecule.swipe.SwipeDirectionAccessibilityAction.StartToEndAccessibilityAction
 import net.thunderbird.components.ui.bolt.molecule.swipe.fork.draggable
+import net.thunderbird.components.ui.bolt.theme.BoltTheme
 import org.jetbrains.compose.resources.stringResource
 
 /**
@@ -184,4 +190,22 @@ object SwipeableRowDefaults {
     const val SWIPEABLE_ROW_CORE_ELEMENT_TEST_TAG = "SwipeableRow_core_element"
     const val SWIPEABLE_ROW_BACKGROUND_CONTENT_TEST_TAG = "SwipeableRow_background_content"
     const val SWIPEABLE_ROW_DRAGGABLE_ELEMENT_TEST_TAG = "SwipeableRow_draggable_element"
+}
+
+@Preview(showBackground = true)
+@Composable
+internal fun SwipeableRowPreview() {
+    PreviewWithThemes {
+        SwipeableRow(
+            state = rememberSwipeableRowState(),
+            backgroundContent = {},
+        ) {
+            Surface {
+                TextBodyMedium(
+                    text = "Swipeable row",
+                    modifier = Modifier.padding(BoltTheme.spacings.double),
+                )
+            }
+        }
+    }
 }

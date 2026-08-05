@@ -1,10 +1,16 @@
 package net.thunderbird.components.ui.bolt.atom
 
+import androidx.compose.foundation.layout.width
 import androidx.compose.material3.ExperimentalMaterial3Api
 import androidx.compose.material3.ExposedDropdownMenuDefaults
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
+import androidx.compose.ui.unit.dp
 import kotlinx.collections.immutable.ImmutableList
+import kotlinx.collections.immutable.persistentListOf
+import net.thunderbird.components.ui.bolt.PreviewWithTheme
+import net.thunderbird.components.ui.bolt.atom.textfield.TextFieldOutlined
 import androidx.compose.material3.DropdownMenu as Material3DropdownMenu
 import androidx.compose.material3.DropdownMenuItem as Material3DropdownMenuItem
 import androidx.compose.material3.ExposedDropdownMenuBox as Material3ExposedDropdownMenuBox
@@ -48,6 +54,27 @@ fun <T> DropdownMenuBox(
                     contentPadding = ExposedDropdownMenuDefaults.ItemContentPadding,
                 )
             }
+        }
+    }
+}
+
+@Preview(showBackground = true)
+@Composable
+internal fun DropdownMenuBoxPreview() {
+    PreviewWithTheme {
+        DropdownMenuBox(
+            expanded = false,
+            onExpandedChange = {},
+            options = persistentListOf("Inbox", "Drafts", "Sent"),
+            onItemSelected = {},
+            modifier = Modifier.width(240.dp),
+        ) {
+            TextFieldOutlined(
+                value = "Inbox",
+                onValueChange = {},
+                label = "Folder",
+                isReadOnly = true,
+            )
         }
     }
 }
