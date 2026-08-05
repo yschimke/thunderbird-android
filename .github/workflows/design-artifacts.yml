@@ -76,7 +76,7 @@ jobs:
           java-version: '21'
 
       - name: Install compose-preview CLI
-        uses: yschimke/compose-ai-tools/.github/actions/install@main
+        uses: yschimke/compose-ai-tools/.github/actions/install@ad7c5f46183526e32ef20db442adb8428fd27b6d # v0.19.38
         with:
           version: catalog
           catalog-key: composeAiPreview
