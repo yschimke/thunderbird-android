@@ -87,7 +87,11 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: yschimke/compose-ai-tools
-          ref: main
+          # Same release as the install action above, so the export driver and
+          # the renderer that produced the PNGs it reads can't skew apart. This
+          # was `main`, which let a driver newer than the pinned CLI run against
+          # that CLI's output. Bump both together.
+          ref: v0.19.38
           path: compose-ai-tools
           persist-credentials: false
 
