@@ -76,7 +76,7 @@ jobs:
           java-version: '21'
 
       - name: Install compose-preview CLI
-        uses: yschimke/compose-ai-tools/.github/actions/install@e53dd69b89afa4f97ef3088a11f020f937243a31 # v0.19.51
+        uses: yschimke/compose-ai-tools/.github/actions/install@2a27e1079d925aeda8db3fd1f48007110c3dc024 # v0.19.60
         with:
           version: catalog
           catalog-key: composeAiPreview
@@ -91,7 +91,7 @@ jobs:
           # the renderer that produced the PNGs it reads can't skew apart. This
           # was `main`, which let a driver newer than the pinned CLI run against
           # that CLI's output. Bump both together.
-          ref: v0.19.49
+          ref: v0.19.60
           path: compose-ai-tools
           persist-credentials: false
 
