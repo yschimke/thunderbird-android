@@ -76,7 +76,7 @@ jobs:
           java-version: '21'
 
       - name: Install compose-preview CLI
-        uses: yschimke/compose-ai-tools/.github/actions/install@2a27e1079d925aeda8db3fd1f48007110c3dc024 # v0.19.60
+        uses: yschimke/compose-ai-tools/.github/actions/install@6dac532565fbb7a74b9ecae4b72e148ecf5ca456 # v1.8.0
         with:
           version: catalog
           catalog-key: composeAiPreview
@@ -91,7 +91,7 @@ jobs:
           # the renderer that produced the PNGs it reads can't skew apart. This
           # was `main`, which let a driver newer than the pinned CLI run against
           # that CLI's output. Bump both together.
-          ref: v0.19.60
+          ref: v1.8.0
           path: compose-ai-tools
           persist-credentials: false
 
@@ -102,7 +102,16 @@ jobs:
 
       - name: Install export engine
         working-directory: compose-ai-tools/scripts/design-artifacts
-        run: npm ci --no-audit --no-fund --loglevel=warn
+        env:
+          DESIGN_PARITY_VERSION: 0.1.51
+        run: |
+          npm ci --no-audit --no-fund --loglevel=warn
+          # The v1.8.0 driver lock predates this design-parity release; keep the
+          # export packages aligned without modifying the upstream checkout.
+          npm install --no-save --package-lock=false --no-audit --no-fund --loglevel=warn \
+            "@design-parity/adapter-figma@$DESIGN_PARITY_VERSION" \
+            "@design-parity/candidate@$DESIGN_PARITY_VERSION" \
+            "@design-parity/catalog-export@$DESIGN_PARITY_VERSION"
 
       - name: Validate catalog spec
         id: validate-spec
