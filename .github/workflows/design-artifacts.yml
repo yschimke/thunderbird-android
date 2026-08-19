@@ -87,11 +87,12 @@ jobs:
         uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
           repository: yschimke/compose-ai-tools
-          # Same release as the install action above, so the export driver and
-          # the renderer that produced the PNGs it reads can't skew apart. This
-          # was `main`, which let a driver newer than the pinned CLI run against
-          # that CLI's output. Bump both together.
-          ref: v1.8.0
+          # Same release the install step above resolves from the version catalog
+          # (composeAiPreview), so the export driver and the renderer that produced
+          # the PNGs it reads can't skew apart. This was `main`, which let a driver
+          # newer than the pinned CLI run against that CLI's output. Bump this in
+          # lockstep with `composeAiPreview` in gradle/libs.versions.toml.
+          ref: v1.21.0
           path: compose-ai-tools
           persist-credentials: false
 
@@ -103,11 +104,11 @@ jobs:
       - name: Install export engine
         working-directory: compose-ai-tools/scripts/design-artifacts
         env:
-          DESIGN_PARITY_VERSION: 0.1.51
+          DESIGN_PARITY_VERSION: 0.1.53
         run: |
           npm ci --no-audit --no-fund --loglevel=warn
-          # The v1.8.0 driver lock predates this design-parity release; keep the
-          # export packages aligned without modifying the upstream checkout.
+          # Hold the export packages at the design-parity release this repo has
+          # validated, without modifying the upstream checkout's lock.
           npm install --no-save --package-lock=false --no-audit --no-fund --loglevel=warn \
             "@design-parity/adapter-figma@$DESIGN_PARITY_VERSION" \
             "@design-parity/candidate@$DESIGN_PARITY_VERSION" \
@@ -195,9 +196,17 @@ jobs:
             --publish-live-bundle \
             --allow-incomplete
 
+      # Split with a SHARED classpath rather than a self-contained bundle per preview:
+      # `classes/app.jar` is published once under `bundle/res/<sha256>` and each split
+      # manifest carries a hash-verified `externalClasspath` pointing at it. The live
+      # re-render lane is unchanged (a trusted serve host hydrates the pooled jar before
+      # starting the daemon); what goes away is the carriage repeating once per preview,
+      # which grows the delivery branch on every publish because any catalog edit rewrites
+      # app.jar. See yschimke/compose-ai-tools#4211.
       - name: Split into per-preview bundles
         run: |
           compose-preview bundle split "$GITHUB_WORKSPACE/out/bundle/bundle.png" \
+            --shared-classpath-out "$GITHUB_WORKSPACE/out/bundle/res" \
             -o "$GITHUB_WORKSPACE/out/bundle/previews"
 
       - name: Publish design-artifacts/${{ matrix.system }}
