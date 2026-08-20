@@ -1,0 +1,94 @@
+{
+  "system": "thunderbird-bolt",
+  "title": "Thunderbird Bolt",
+  "label": "Compose",
+  "source": {
+    "repo": "yschimke/thunderbird-android",
+    "ref": "previews",
+    "module": ":ui:bolt"
+  },
+  "generatedAt": "2026-08-20T06:59:21.192Z",
+  "mappings": [
+    {
+      "componentId": "Buttons/Filled",
+      "figmaLayerName": "Buttons/Filled",
+      "componentName": "PreviewWithThemes",
+      "source": "https://github.com/yschimke/thunderbird-android/blob/previews/ui/bolt/src/commonMain/kotlin/net/thunderbird/components/ui/bolt/PreviewWithThemes.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "ButtonFilledPreview",
+      "codeSnippet": "PreviewWithThemes(\n    content = { },\n)",
+      "imports": [
+        "import net.thunderbird.components.ui.bolt.PreviewWithThemes"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Selection/Checkbox",
+      "figmaLayerName": "Selection/Checkbox",
+      "componentName": "PreviewWithThemes",
+      "source": "https://github.com/yschimke/thunderbird-android/blob/previews/ui/bolt/src/commonMain/kotlin/net/thunderbird/components/ui/bolt/PreviewWithThemes.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "CheckboxPreview",
+      "codeSnippet": "PreviewWithThemes(\n    content = { },\n)",
+      "imports": [
+        "import net.thunderbird.components.ui.bolt.PreviewWithThemes"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ]
+    },
+    {
+      "componentId": "Cards/Filled",
+      "figmaLayerName": "Cards/Filled",
+      "componentName": "PreviewWithThemes",
+      "source": "https://github.com/yschimke/thunderbird-android/blob/previews/ui/bolt/src/commonMain/kotlin/net/thunderbird/components/ui/bolt/PreviewWithThemes.kt",
+      "label": "Compose",
+      "confidence": "HIGH",
+      "previewName": "CardFilledPreview",
+      "codeSnippet": "PreviewWithThemes(\n    content = { },\n)",
+      "imports": [
+        "import net.thunderbird.components.ui.bolt.PreviewWithThemes"
+      ],
+      "parameters": [
+        {
+          "name": "modifier",
+          "type": "Modifier",
+          "hasDefault": true,
+          "composableSlot": false
+        },
+        {
+          "name": "content",
+          "type": "() -> Unit",
+          "hasDefault": false,
+          "composableSlot": true
+        }
+      ]
+    }
+  ]
+}

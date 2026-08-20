@@ -1,0 +1,1284 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "thunderbird-bolt",
+  "title": "Thunderbird Bolt",
+  "components": [
+    {
+      "componentId": "Buttons/Filled",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/buttons-filled/ideal__default.png",
+          "state": "default",
+          "width": 398,
+          "height": 756,
+          "livePreview": "https://preview.coo.ee/thunderbird-bolt/p/buttons-filled__ideal__default",
+          "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonFilledKt.ButtonFilledPreview",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-filled/ideal__disabled.png",
+          "state": "disabled",
+          "width": 593,
+          "height": 756,
+          "livePreview": "https://preview.coo.ee/thunderbird-bolt/p/buttons-filled__ideal__disabled",
+          "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonFilledKt.ButtonFilledDisabledPreview",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/buttons-filled/ideal__default__label-multi-line.png",
+          "state": "default",
+          "width": 369,
+          "height": 844,
+          "props": {
+            "label": "multi-line"
+          },
+          "livePreview": "https://preview.coo.ee/thunderbird-bolt/p/buttons-filled__ideal__default__label-multi-line",
+          "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonFilledKt.ButtonFilledMultiLinePreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Atoms",
+      "group": "Buttons",
+      "caption": "Primary filled action in Thunderbird and K-9 Mail themes.",
+      "sourceFile": "src/commonMain/kotlin/net/thunderbird/components/ui/bolt/atom/button/ButtonFilled.kt",
+      "sourceModule": ":ui:bolt",
+      "bodyLine": 55
+    },
+    {
+      "componentId": "Selection/Checkbox",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/selection-checkbox/ideal__default.png",
+          "state": "default",
+          "width": 181,
+          "height": 756,
+          "livePreview": "https://preview.coo.ee/thunderbird-bolt/p/selection-checkbox__ideal__default",
+          "previewId": "net.thunderbird.components.ui.bolt.atom.CheckboxKt.CheckboxPreview",
+          "density": 2.625
+        },
+        {
+          "variant": "ideal",
+          "path": "images/selection-checkbox/ideal__disabled.png",
+          "state": "disabled",
+          "width": 181,
+          "height": 756,
+          "livePreview": "https://preview.coo.ee/thunderbird-bolt/p/selection-checkbox__ideal__disabled",
+          "previewId": "net.thunderbird.components.ui.bolt.atom.CheckboxKt.CheckboxDisabledPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Atoms",
+      "group": "Selection controls",
+      "sourceFile": "src/commonMain/kotlin/net/thunderbird/components/ui/bolt/atom/Checkbox.kt",
+      "sourceModule": ":ui:bolt",
+      "bodyLine": 26
+    },
+    {
+      "componentId": "Cards/Filled",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/cards-filled/ideal__default.png",
+          "state": "default",
+          "width": 303,
+          "height": 760,
+          "livePreview": "https://preview.coo.ee/thunderbird-bolt/p/cards-filled__ideal__default",
+          "previewId": "net.thunderbird.components.ui.bolt.atom.card.CardFilledKt.CardFilledPreview",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Atoms",
+      "group": "Cards and surfaces",
+      "sourceFile": "src/commonMain/kotlin/net/thunderbird/components/ui/bolt/atom/card/CardFilled.kt",
+      "sourceModule": ":ui:bolt",
+      "bodyLine": 46
+    }
+  ],
+  "library": [
+    "Bolt",
+    "Compose Material 3"
+  ],
+  "renderer": "compose-preview 1.21.0",
+  "generatedAt": "2026-08-20T06:59:20.114Z",
+  "display": {
+    "surface": "light",
+    "hero": "Buttons/Filled"
+  },
+  "failures": [
+    {
+      "id": "render-failed--badgeiconpreview--net-thunderbird-components-ui-bolt-atom-icon-badgeiconkt-badgeiconpreview-dark",
+      "componentId": "BadgeIconPreview",
+      "preview": "net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIconPreview_Dark",
+      "phase": "render",
+      "errorClass": "java.lang.reflect.InvocationTargetException",
+      "message": "",
+      "stackTrace": "java.lang.reflect.InvocationTargetException\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat androidx.compose.runtime.reflect.ComposableMethod.invoke(ComposableMethod.jvmAndAndroid.kt:149)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.InvokeComposable(DesktopRendererMain.kt:1613)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0$1(DesktopRendererMain.kt:1355)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.ComposePreviewSceneKt.ComposePreviewContentBox-FU0evQE(ComposePreviewScene.kt:112)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0(DesktopRendererMain.kt:1348)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$1(DesktopRendererMain.kt:1365)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1(DesktopRendererMain.kt:1380)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0$1(DesktopRendererMain.kt:1327)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0(DesktopRendererMain.kt:1322)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:131)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1(DesktopRendererMain.kt:1331)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocals_skikoKt.ProvidePlatformCompositionLocals(CompositionLocals.skiko.kt:107)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:146)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocalsKt.ProvideCommonCompositionLocals(CompositionLocals.kt:237)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0$0(Wrapper.skiko.kt:40)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.provide(Wrapper.skiko.kt:55)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0(Wrapper.skiko.kt:39)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.internal.Expect_jvmKt.invokeComposable(Expect.jvmAndAndroid.kt:26)\n\tat androidx.compose.runtime.GapComposer.doCompose-aFTiNEg(GapComposer.kt:2643)\n\tat androidx.compose.runtime.GapComposer.composeContent--ZbOJvo$runtime(GapComposer.kt:2545)\n\tat androidx.compose.runtime.CompositionImpl.composeContent(Composition.kt:895)\n\tat androidx.compose.runtime.Recomposer.composeInitial$runtime(Recomposer.kt:1178)\n\tat androidx.compose.runtime.CompositionImpl.composeInitial(Composition.kt:732)\n\tat androidx.compose.runtime.CompositionImpl.setContent(Composition.kt:699)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent(Wrapper.skiko.kt:38)\n\tat androidx.compose.ui.scene.CanvasLayersComposeSceneImpl.createComposition(CanvasLayersComposeScene.skiko.kt:218)\n\tat androidx.compose.ui.scene.BaseComposeScene.setContent(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.ui.ImageComposeScene.setContent(ImageComposeScene.skiko.kt:254)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview(DesktopRendererMain.kt:1309)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$default(DesktopRendererMain.kt:1182)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.main(DesktopRendererMain.kt:719)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.desktopRendererWorkerMain(DesktopRendererWorkerMain.kt:121)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt:157)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt)\nCaused by: java.lang.IllegalStateException: No ThemeSizes provided\n\tat net.thunderbird.components.ui.bolt.theme.ThemeSizesKt.LocalThemeSizes$lambda$0(ThemeSizes.kt:33)\n\tat kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)\n\tat androidx.compose.runtime.LazyValueHolder.getCurrent(ValueHolders.kt:46)\n\tat androidx.compose.runtime.LazyValueHolder.readValue(ValueHolders.kt:48)\n\tat androidx.compose.runtime.CompositionLocalMapKt.read(CompositionLocalMap.kt:88)\n\tat androidx.compose.runtime.GapComposer.consume(GapComposer.kt:1235)\n\tat net.thunderbird.components.ui.bolt.theme.BoltTheme.getSizes(BoltTheme.kt:110)\n\tat net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIcon-xqIIw2o(BadgeIcon.kt:31)\n\tat net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIconPreview(BadgeIcon.kt:39)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\t... 58 more\n",
+      "mode": "dark",
+      "sourceFile": "src/commonMain/kotlin/net/thunderbird/components/ui/bolt/atom/icon/BadgeIcon.kt"
+    },
+    {
+      "id": "render-failed--badgeiconpreview--net-thunderbird-components-ui-bolt-atom-icon-badgeiconkt-badgeiconpreview-light",
+      "componentId": "BadgeIconPreview",
+      "preview": "net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIconPreview_Light",
+      "phase": "render",
+      "errorClass": "java.lang.reflect.InvocationTargetException",
+      "message": "",
+      "stackTrace": "java.lang.reflect.InvocationTargetException\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat androidx.compose.runtime.reflect.ComposableMethod.invoke(ComposableMethod.jvmAndAndroid.kt:149)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.InvokeComposable(DesktopRendererMain.kt:1613)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0$1(DesktopRendererMain.kt:1355)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.ComposePreviewSceneKt.ComposePreviewContentBox-FU0evQE(ComposePreviewScene.kt:112)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0(DesktopRendererMain.kt:1348)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$1(DesktopRendererMain.kt:1365)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1(DesktopRendererMain.kt:1380)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0$1(DesktopRendererMain.kt:1327)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0(DesktopRendererMain.kt:1322)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:131)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1(DesktopRendererMain.kt:1331)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocals_skikoKt.ProvidePlatformCompositionLocals(CompositionLocals.skiko.kt:107)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:146)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocalsKt.ProvideCommonCompositionLocals(CompositionLocals.kt:237)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0$0(Wrapper.skiko.kt:40)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.provide(Wrapper.skiko.kt:55)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0(Wrapper.skiko.kt:39)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.internal.Expect_jvmKt.invokeComposable(Expect.jvmAndAndroid.kt:26)\n\tat androidx.compose.runtime.GapComposer.doCompose-aFTiNEg(GapComposer.kt:2643)\n\tat androidx.compose.runtime.GapComposer.composeContent--ZbOJvo$runtime(GapComposer.kt:2545)\n\tat androidx.compose.runtime.CompositionImpl.composeContent(Composition.kt:895)\n\tat androidx.compose.runtime.Recomposer.composeInitial$runtime(Recomposer.kt:1178)\n\tat androidx.compose.runtime.CompositionImpl.composeInitial(Composition.kt:732)\n\tat androidx.compose.runtime.CompositionImpl.setContent(Composition.kt:699)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent(Wrapper.skiko.kt:38)\n\tat androidx.compose.ui.scene.CanvasLayersComposeSceneImpl.createComposition(CanvasLayersComposeScene.skiko.kt:218)\n\tat androidx.compose.ui.scene.BaseComposeScene.setContent(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.ui.ImageComposeScene.setContent(ImageComposeScene.skiko.kt:254)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview(DesktopRendererMain.kt:1309)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$default(DesktopRendererMain.kt:1182)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.main(DesktopRendererMain.kt:719)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.desktopRendererWorkerMain(DesktopRendererWorkerMain.kt:121)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt:157)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt)\nCaused by: java.lang.IllegalStateException: No ThemeSizes provided\n\tat net.thunderbird.components.ui.bolt.theme.ThemeSizesKt.LocalThemeSizes$lambda$0(ThemeSizes.kt:33)\n\tat kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)\n\tat androidx.compose.runtime.LazyValueHolder.getCurrent(ValueHolders.kt:46)\n\tat androidx.compose.runtime.LazyValueHolder.readValue(ValueHolders.kt:48)\n\tat androidx.compose.runtime.CompositionLocalMapKt.read(CompositionLocalMap.kt:88)\n\tat androidx.compose.runtime.GapComposer.consume(GapComposer.kt:1235)\n\tat net.thunderbird.components.ui.bolt.theme.BoltTheme.getSizes(BoltTheme.kt:110)\n\tat net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIcon-xqIIw2o(BadgeIcon.kt:31)\n\tat net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIconPreview(BadgeIcon.kt:39)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\t... 58 more\n",
+      "mode": "light",
+      "sourceFile": "src/commonMain/kotlin/net/thunderbird/components/ui/bolt/atom/icon/BadgeIcon.kt"
+    },
+    {
+      "id": "render-failed--badgeiconwithtintpreview--net-thunderbird-components-ui-bolt-atom-icon-badgeiconkt-badgeiconwithtintpreview-dark",
+      "componentId": "BadgeIconWithTintPreview",
+      "preview": "net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIconWithTintPreview_Dark",
+      "phase": "render",
+      "errorClass": "java.lang.reflect.InvocationTargetException",
+      "message": "",
+      "stackTrace": "java.lang.reflect.InvocationTargetException\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat androidx.compose.runtime.reflect.ComposableMethod.invoke(ComposableMethod.jvmAndAndroid.kt:149)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.InvokeComposable(DesktopRendererMain.kt:1613)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0$1(DesktopRendererMain.kt:1355)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.ComposePreviewSceneKt.ComposePreviewContentBox-FU0evQE(ComposePreviewScene.kt:112)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0(DesktopRendererMain.kt:1348)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$1(DesktopRendererMain.kt:1365)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1(DesktopRendererMain.kt:1380)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0$1(DesktopRendererMain.kt:1327)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0(DesktopRendererMain.kt:1322)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:131)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1(DesktopRendererMain.kt:1331)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocals_skikoKt.ProvidePlatformCompositionLocals(CompositionLocals.skiko.kt:107)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:146)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocalsKt.ProvideCommonCompositionLocals(CompositionLocals.kt:237)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0$0(Wrapper.skiko.kt:40)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.provide(Wrapper.skiko.kt:55)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0(Wrapper.skiko.kt:39)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.internal.Expect_jvmKt.invokeComposable(Expect.jvmAndAndroid.kt:26)\n\tat androidx.compose.runtime.GapComposer.doCompose-aFTiNEg(GapComposer.kt:2643)\n\tat androidx.compose.runtime.GapComposer.composeContent--ZbOJvo$runtime(GapComposer.kt:2545)\n\tat androidx.compose.runtime.CompositionImpl.composeContent(Composition.kt:895)\n\tat androidx.compose.runtime.Recomposer.composeInitial$runtime(Recomposer.kt:1178)\n\tat androidx.compose.runtime.CompositionImpl.composeInitial(Composition.kt:732)\n\tat androidx.compose.runtime.CompositionImpl.setContent(Composition.kt:699)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent(Wrapper.skiko.kt:38)\n\tat androidx.compose.ui.scene.CanvasLayersComposeSceneImpl.createComposition(CanvasLayersComposeScene.skiko.kt:218)\n\tat androidx.compose.ui.scene.BaseComposeScene.setContent(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.ui.ImageComposeScene.setContent(ImageComposeScene.skiko.kt:254)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview(DesktopRendererMain.kt:1309)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$default(DesktopRendererMain.kt:1182)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.main(DesktopRendererMain.kt:719)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.desktopRendererWorkerMain(DesktopRendererWorkerMain.kt:121)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt:157)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt)\nCaused by: java.lang.IllegalStateException: No ThemeSizes provided\n\tat net.thunderbird.components.ui.bolt.theme.ThemeSizesKt.LocalThemeSizes$lambda$0(ThemeSizes.kt:33)\n\tat kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)\n\tat androidx.compose.runtime.LazyValueHolder.getCurrent(ValueHolders.kt:46)\n\tat androidx.compose.runtime.LazyValueHolder.readValue(ValueHolders.kt:48)\n\tat androidx.compose.runtime.CompositionLocalMapKt.read(CompositionLocalMap.kt:88)\n\tat androidx.compose.runtime.GapComposer.consume(GapComposer.kt:1235)\n\tat net.thunderbird.components.ui.bolt.theme.BoltTheme.getSizes(BoltTheme.kt:110)\n\tat net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIcon-xqIIw2o(BadgeIcon.kt:31)\n\tat net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIconWithTintPreview(BadgeIcon.kt:48)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\t... 58 more\n",
+      "mode": "dark",
+      "sourceFile": "src/commonMain/kotlin/net/thunderbird/components/ui/bolt/atom/icon/BadgeIcon.kt"
+    },
+    {
+      "id": "render-failed--badgeiconwithtintpreview--net-thunderbird-components-ui-bolt-atom-icon-badgeiconkt-badgeiconwithtintpreview-light",
+      "componentId": "BadgeIconWithTintPreview",
+      "preview": "net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIconWithTintPreview_Light",
+      "phase": "render",
+      "errorClass": "java.lang.reflect.InvocationTargetException",
+      "message": "",
+      "stackTrace": "java.lang.reflect.InvocationTargetException\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat androidx.compose.runtime.reflect.ComposableMethod.invoke(ComposableMethod.jvmAndAndroid.kt:149)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.InvokeComposable(DesktopRendererMain.kt:1613)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0$1(DesktopRendererMain.kt:1355)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.ComposePreviewSceneKt.ComposePreviewContentBox-FU0evQE(ComposePreviewScene.kt:112)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0(DesktopRendererMain.kt:1348)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$1(DesktopRendererMain.kt:1365)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1(DesktopRendererMain.kt:1380)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0$1(DesktopRendererMain.kt:1327)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0(DesktopRendererMain.kt:1322)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:131)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1(DesktopRendererMain.kt:1331)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocals_skikoKt.ProvidePlatformCompositionLocals(CompositionLocals.skiko.kt:107)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:146)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocalsKt.ProvideCommonCompositionLocals(CompositionLocals.kt:237)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0$0(Wrapper.skiko.kt:40)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.provide(Wrapper.skiko.kt:55)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0(Wrapper.skiko.kt:39)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.internal.Expect_jvmKt.invokeComposable(Expect.jvmAndAndroid.kt:26)\n\tat androidx.compose.runtime.GapComposer.doCompose-aFTiNEg(GapComposer.kt:2643)\n\tat androidx.compose.runtime.GapComposer.composeContent--ZbOJvo$runtime(GapComposer.kt:2545)\n\tat androidx.compose.runtime.CompositionImpl.composeContent(Composition.kt:895)\n\tat androidx.compose.runtime.Recomposer.composeInitial$runtime(Recomposer.kt:1178)\n\tat androidx.compose.runtime.CompositionImpl.composeInitial(Composition.kt:732)\n\tat androidx.compose.runtime.CompositionImpl.setContent(Composition.kt:699)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent(Wrapper.skiko.kt:38)\n\tat androidx.compose.ui.scene.CanvasLayersComposeSceneImpl.createComposition(CanvasLayersComposeScene.skiko.kt:218)\n\tat androidx.compose.ui.scene.BaseComposeScene.setContent(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.ui.ImageComposeScene.setContent(ImageComposeScene.skiko.kt:254)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview(DesktopRendererMain.kt:1309)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$default(DesktopRendererMain.kt:1182)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.main(DesktopRendererMain.kt:719)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.desktopRendererWorkerMain(DesktopRendererWorkerMain.kt:121)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt:157)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt)\nCaused by: java.lang.IllegalStateException: No ThemeSizes provided\n\tat net.thunderbird.components.ui.bolt.theme.ThemeSizesKt.LocalThemeSizes$lambda$0(ThemeSizes.kt:33)\n\tat kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)\n\tat androidx.compose.runtime.LazyValueHolder.getCurrent(ValueHolders.kt:46)\n\tat androidx.compose.runtime.LazyValueHolder.readValue(ValueHolders.kt:48)\n\tat androidx.compose.runtime.CompositionLocalMapKt.read(CompositionLocalMap.kt:88)\n\tat androidx.compose.runtime.GapComposer.consume(GapComposer.kt:1235)\n\tat net.thunderbird.components.ui.bolt.theme.BoltTheme.getSizes(BoltTheme.kt:110)\n\tat net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIcon-xqIIw2o(BadgeIcon.kt:31)\n\tat net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIconWithTintPreview(BadgeIcon.kt:48)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\t... 58 more\n",
+      "mode": "light",
+      "sourceFile": "src/commonMain/kotlin/net/thunderbird/components/ui/bolt/atom/icon/BadgeIcon.kt"
+    },
+    {
+      "id": "render-failed--preview--net-thunderbird-components-ui-bolt-atom-icon-filled-fillednewmailbadgekt-preview",
+      "componentId": "Preview",
+      "preview": "net.thunderbird.components.ui.bolt.atom.icon.filled.FilledNewMailBadgeKt.Preview",
+      "phase": "render",
+      "errorClass": "java.lang.reflect.InvocationTargetException",
+      "message": "",
+      "stackTrace": "java.lang.reflect.InvocationTargetException\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat androidx.compose.runtime.reflect.ComposableMethod.invoke(ComposableMethod.jvmAndAndroid.kt:149)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.InvokeComposable(DesktopRendererMain.kt:1613)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0$1(DesktopRendererMain.kt:1355)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.ComposePreviewSceneKt.ComposePreviewContentBox-FU0evQE(ComposePreviewScene.kt:112)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0(DesktopRendererMain.kt:1348)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$1(DesktopRendererMain.kt:1365)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1(DesktopRendererMain.kt:1380)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0$1(DesktopRendererMain.kt:1327)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0(DesktopRendererMain.kt:1322)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:131)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1(DesktopRendererMain.kt:1331)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocals_skikoKt.ProvidePlatformCompositionLocals(CompositionLocals.skiko.kt:107)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:146)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocalsKt.ProvideCommonCompositionLocals(CompositionLocals.kt:237)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0$0(Wrapper.skiko.kt:40)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.provide(Wrapper.skiko.kt:55)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0(Wrapper.skiko.kt:39)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.internal.Expect_jvmKt.invokeComposable(Expect.jvmAndAndroid.kt:26)\n\tat androidx.compose.runtime.GapComposer.doCompose-aFTiNEg(GapComposer.kt:2643)\n\tat androidx.compose.runtime.GapComposer.composeContent--ZbOJvo$runtime(GapComposer.kt:2545)\n\tat androidx.compose.runtime.CompositionImpl.composeContent(Composition.kt:895)\n\tat androidx.compose.runtime.Recomposer.composeInitial$runtime(Recomposer.kt:1178)\n\tat androidx.compose.runtime.CompositionImpl.composeInitial(Composition.kt:732)\n\tat androidx.compose.runtime.CompositionImpl.setContent(Composition.kt:699)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent(Wrapper.skiko.kt:38)\n\tat androidx.compose.ui.scene.CanvasLayersComposeSceneImpl.createComposition(CanvasLayersComposeScene.skiko.kt:218)\n\tat androidx.compose.ui.scene.BaseComposeScene.setContent(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.ui.ImageComposeScene.setContent(ImageComposeScene.skiko.kt:254)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview(DesktopRendererMain.kt:1309)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$default(DesktopRendererMain.kt:1182)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.main(DesktopRendererMain.kt:719)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.desktopRendererWorkerMain(DesktopRendererWorkerMain.kt:121)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt:157)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt)\nCaused by: java.lang.IllegalStateException: No ThemeSizes provided\n\tat net.thunderbird.components.ui.bolt.theme.ThemeSizesKt.LocalThemeSizes$lambda$0(ThemeSizes.kt:33)\n\tat kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)\n\tat androidx.compose.runtime.LazyValueHolder.getCurrent(ValueHolders.kt:46)\n\tat androidx.compose.runtime.LazyValueHolder.readValue(ValueHolders.kt:48)\n\tat androidx.compose.runtime.CompositionLocalMapKt.read(CompositionLocalMap.kt:88)\n\tat androidx.compose.runtime.GapComposer.consume(GapComposer.kt:1235)\n\tat net.thunderbird.components.ui.bolt.theme.BoltTheme.getSizes(BoltTheme.kt:110)\n\tat net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIcon-xqIIw2o(BadgeIcon.kt:31)\n\tat net.thunderbird.components.ui.bolt.atom.icon.filled.FilledNewMailBadgeKt.Preview(FilledNewMailBadge.kt:43)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\t... 58 more\n",
+      "sourceFile": "src/commonMain/kotlin/net/thunderbird/components/ui/bolt/atom/icon/filled/FilledNewMailBadge.kt"
+    },
+    {
+      "id": "render-failed--preview--net-thunderbird-components-ui-bolt-atom-icon-filled-filledunreadmailbadgekt-preview",
+      "componentId": "Preview",
+      "preview": "net.thunderbird.components.ui.bolt.atom.icon.filled.FilledUnreadMailBadgeKt.Preview",
+      "phase": "render",
+      "errorClass": "java.lang.reflect.InvocationTargetException",
+      "message": "",
+      "stackTrace": "java.lang.reflect.InvocationTargetException\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat androidx.compose.runtime.reflect.ComposableMethod.invoke(ComposableMethod.jvmAndAndroid.kt:149)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.InvokeComposable(DesktopRendererMain.kt:1613)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0$1(DesktopRendererMain.kt:1355)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.ComposePreviewSceneKt.ComposePreviewContentBox-FU0evQE(ComposePreviewScene.kt:112)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0(DesktopRendererMain.kt:1348)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$1(DesktopRendererMain.kt:1365)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1(DesktopRendererMain.kt:1380)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0$1(DesktopRendererMain.kt:1327)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0(DesktopRendererMain.kt:1322)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:131)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1(DesktopRendererMain.kt:1331)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocals_skikoKt.ProvidePlatformCompositionLocals(CompositionLocals.skiko.kt:107)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:146)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocalsKt.ProvideCommonCompositionLocals(CompositionLocals.kt:237)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0$0(Wrapper.skiko.kt:40)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.provide(Wrapper.skiko.kt:55)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0(Wrapper.skiko.kt:39)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.internal.Expect_jvmKt.invokeComposable(Expect.jvmAndAndroid.kt:26)\n\tat androidx.compose.runtime.GapComposer.doCompose-aFTiNEg(GapComposer.kt:2643)\n\tat androidx.compose.runtime.GapComposer.composeContent--ZbOJvo$runtime(GapComposer.kt:2545)\n\tat androidx.compose.runtime.CompositionImpl.composeContent(Composition.kt:895)\n\tat androidx.compose.runtime.Recomposer.composeInitial$runtime(Recomposer.kt:1178)\n\tat androidx.compose.runtime.CompositionImpl.composeInitial(Composition.kt:732)\n\tat androidx.compose.runtime.CompositionImpl.setContent(Composition.kt:699)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent(Wrapper.skiko.kt:38)\n\tat androidx.compose.ui.scene.CanvasLayersComposeSceneImpl.createComposition(CanvasLayersComposeScene.skiko.kt:218)\n\tat androidx.compose.ui.scene.BaseComposeScene.setContent(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.ui.ImageComposeScene.setContent(ImageComposeScene.skiko.kt:254)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview(DesktopRendererMain.kt:1309)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$default(DesktopRendererMain.kt:1182)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.main(DesktopRendererMain.kt:719)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.desktopRendererWorkerMain(DesktopRendererWorkerMain.kt:121)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt:157)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt)\nCaused by: java.lang.IllegalStateException: No ThemeSizes provided\n\tat net.thunderbird.components.ui.bolt.theme.ThemeSizesKt.LocalThemeSizes$lambda$0(ThemeSizes.kt:33)\n\tat kotlin.SynchronizedLazyImpl.getValue(LazyJVM.kt:86)\n\tat androidx.compose.runtime.LazyValueHolder.getCurrent(ValueHolders.kt:46)\n\tat androidx.compose.runtime.LazyValueHolder.readValue(ValueHolders.kt:48)\n\tat androidx.compose.runtime.CompositionLocalMapKt.read(CompositionLocalMap.kt:88)\n\tat androidx.compose.runtime.GapComposer.consume(GapComposer.kt:1235)\n\tat net.thunderbird.components.ui.bolt.theme.BoltTheme.getSizes(BoltTheme.kt:110)\n\tat net.thunderbird.components.ui.bolt.atom.icon.BadgeIconKt.BadgeIcon-xqIIw2o(BadgeIcon.kt:31)\n\tat net.thunderbird.components.ui.bolt.atom.icon.filled.FilledUnreadMailBadgeKt.Preview(FilledUnreadMailBadge.kt:31)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\t... 58 more\n",
+      "sourceFile": "src/commonMain/kotlin/net/thunderbird/components/ui/bolt/atom/icon/filled/FilledUnreadMailBadge.kt"
+    },
+    {
+      "id": "render-failed--remoteimagepreview--net-thunderbird-components-ui-bolt-atom-image-remoteimagekt-remoteimagepreview",
+      "componentId": "RemoteImagePreview",
+      "preview": "net.thunderbird.components.ui.bolt.atom.image.RemoteImageKt.RemoteImagePreview",
+      "phase": "render",
+      "errorClass": "java.lang.reflect.InvocationTargetException",
+      "message": "",
+      "stackTrace": "java.lang.reflect.InvocationTargetException\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:118)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat androidx.compose.runtime.reflect.ComposableMethod.invoke(ComposableMethod.jvmAndAndroid.kt:149)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.InvokeComposable(DesktopRendererMain.kt:1613)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0$1(DesktopRendererMain.kt:1355)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.ComposePreviewSceneKt.ComposePreviewContentBox-FU0evQE(ComposePreviewScene.kt:112)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$0(DesktopRendererMain.kt:1348)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1$1(DesktopRendererMain.kt:1365)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$1(DesktopRendererMain.kt:1380)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0$1(DesktopRendererMain.kt:1327)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1$0(DesktopRendererMain.kt:1322)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:131)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$lambda$1(DesktopRendererMain.kt:1331)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocals_skikoKt.ProvidePlatformCompositionLocals(CompositionLocals.skiko.kt:107)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:146)\n\tat androidx.compose.ui.scene.BaseComposeScene$setContent$1$2.invoke(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.ui.platform.CompositionLocalsKt.ProvideCommonCompositionLocals(CompositionLocals.kt:237)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0$0(Wrapper.skiko.kt:40)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.provide(Wrapper.skiko.kt:55)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent$lambda$0(Wrapper.skiko.kt:39)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.internal.Expect_jvmKt.invokeComposable(Expect.jvmAndAndroid.kt:26)\n\tat androidx.compose.runtime.GapComposer.doCompose-aFTiNEg(GapComposer.kt:2643)\n\tat androidx.compose.runtime.GapComposer.composeContent--ZbOJvo$runtime(GapComposer.kt:2545)\n\tat androidx.compose.runtime.CompositionImpl.composeContent(Composition.kt:895)\n\tat androidx.compose.runtime.Recomposer.composeInitial$runtime(Recomposer.kt:1178)\n\tat androidx.compose.runtime.CompositionImpl.composeInitial(Composition.kt:732)\n\tat androidx.compose.runtime.CompositionImpl.setContent(Composition.kt:699)\n\tat androidx.compose.ui.platform.Wrapper_skikoKt.setContent(Wrapper.skiko.kt:38)\n\tat androidx.compose.ui.scene.CanvasLayersComposeSceneImpl.createComposition(CanvasLayersComposeScene.skiko.kt:218)\n\tat androidx.compose.ui.scene.BaseComposeScene.setContent(BaseComposeScene.skiko.kt:145)\n\tat androidx.compose.ui.ImageComposeScene.setContent(ImageComposeScene.skiko.kt:254)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview(DesktopRendererMain.kt:1309)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.renderPreview$default(DesktopRendererMain.kt:1182)\n\tat ee.schimke.composeai.renderer.DesktopRendererMainKt.main(DesktopRendererMain.kt:719)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.desktopRendererWorkerMain(DesktopRendererWorkerMain.kt:121)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt:157)\n\tat ee.schimke.composeai.renderer.DesktopRendererWorkerMainKt.main(DesktopRendererWorkerMain.kt)\nCaused by: java.lang.NoClassDefFoundError: coil3/network/ktor3/KtorNetworkFetcher\n\tat com.skydoves.landscapist.coil3.PlatformsKt.<clinit>(Platforms.kt:78)\n\tat com.skydoves.landscapist.coil3.CoilImageKt.CoilImage(CoilImage.kt:109)\n\tat net.thunderbird.components.ui.bolt.atom.image.RemoteImageKt.RemoteImage(RemoteImage.kt:50)\n\tat net.thunderbird.components.ui.bolt.atom.image.ComposableSingletons$RemoteImageKt.lambda__1448422173$lambda$0(RemoteImage.kt:117)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:428)\n\tat androidx.compose.material3.TextKt.ProvideTextStyle(Text.kt:462)\n\tat androidx.compose.material3.MaterialThemeKt$MaterialTheme$2.invoke(MaterialTheme.kt:107)\n\tat androidx.compose.material3.MaterialThemeKt$MaterialTheme$2.invoke(MaterialTheme.kt:106)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat androidx.compose.material3.MaterialThemeKt.MaterialTheme(MaterialTheme.kt:99)\n\tat androidx.compose.material3.MaterialThemeKt.MaterialTheme(MaterialTheme.kt:60)\n\tat net.thunderbird.components.ui.bolt.theme.BoltThemeKt.BoltTheme$lambda$0(BoltTheme.kt:34)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:122)\n\tat androidx.compose.runtime.internal.ComposableLambdaImpl.invoke(ComposableLambda.kt:52)\n\tat androidx.compose.runtime.CompositionLocalKt.CompositionLocalProvider(CompositionLocal.kt:408)\n\tat net.thunderbird.components.ui.bolt.theme.BoltThemeKt.BoltTheme(BoltTheme.kt:25)\n\tat net.thunderbird.components.ui.bolt.theme.thunderbird.ThunderbirdBoltThemeKt.ThunderbirdBoltTheme(ThunderbirdBoltTheme.kt:43)\n\tat net.thunderbird.components.ui.bolt.PreviewWithThemesKt.PreviewWithThunderbirdTheme(PreviewWithThemes.kt:130)\n\tat net.thunderbird.components.ui.bolt.PreviewWithThemesKt.PreviewWithTheme(PreviewWithThemes.kt:88)\n\tat net.thunderbird.components.ui.bolt.atom.image.RemoteImageKt.RemoteImagePreview(RemoteImage.kt:115)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\t... 58 more\nCaused by: java.lang.ClassNotFoundException: coil3.network.ktor3.KtorNetworkFetcher\n\tat java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641)\n\tat java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188)\n\tat java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526)\n\t... 83 more\n",
+      "sourceFile": "src/commonMain/kotlin/net/thunderbird/components/ui/bolt/atom/image/RemoteImage.kt"
+    }
+  ],
+  "liveBundle": {
+    "path": "bundle/",
+    "file": "bundle.png"
+  },
+  "liveBundles": [
+    {
+      "path": "bundle/",
+      "file": "bundle.png",
+      "module": ":ui:bolt",
+      "previewIdPrefix": ""
+    }
+  ],
+  "deferred": [
+    {
+      "componentId": "Buttons/Outlined",
+      "group": "Buttons",
+      "section": "Atoms",
+      "caption": "Outlined secondary action.",
+      "preview": "ButtonOutlinedPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonOutlinedKt.ButtonOutlinedPreview",
+      "path": "images/buttons-outlined/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.button.ButtonOutlinedKt.ButtonOutlinedPreview"
+      ]
+    },
+    {
+      "componentId": "Buttons/Outlined",
+      "group": "Buttons",
+      "section": "Atoms",
+      "preview": "ButtonOutlinedDisabledPreview",
+      "reason": "variant",
+      "state": "disabled",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonOutlinedKt.ButtonOutlinedDisabledPreview",
+      "path": "images/buttons-outlined/ideal__disabled.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.button.ButtonOutlinedKt.ButtonOutlinedDisabledPreview"
+      ]
+    },
+    {
+      "componentId": "Buttons/Outlined",
+      "group": "Buttons",
+      "section": "Atoms",
+      "preview": "ButtonOutlinedIconPreview",
+      "reason": "variant",
+      "props": {
+        "content": "icon and label"
+      },
+      "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonOutlinedKt.ButtonOutlinedIconPreview",
+      "path": "images/buttons-outlined/ideal__default__content-icon-and-label.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.button.ButtonOutlinedKt.ButtonOutlinedIconPreview"
+      ]
+    },
+    {
+      "componentId": "Buttons/Tonal",
+      "group": "Buttons",
+      "section": "Atoms",
+      "caption": "Lower-emphasis filled tonal action.",
+      "preview": "ButtonFilledTonalPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonFilledTonalButtonKt.ButtonFilledTonalPreview",
+      "path": "images/buttons-tonal/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.button.ButtonFilledTonalButtonKt.ButtonFilledTonalPreview"
+      ]
+    },
+    {
+      "componentId": "Buttons/Tonal",
+      "group": "Buttons",
+      "section": "Atoms",
+      "preview": "ButtonFilledTonalDisabledPreview",
+      "reason": "variant",
+      "state": "disabled",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonFilledTonalButtonKt.ButtonFilledTonalDisabledPreview",
+      "path": "images/buttons-tonal/ideal__disabled.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.button.ButtonFilledTonalButtonKt.ButtonFilledTonalDisabledPreview"
+      ]
+    },
+    {
+      "componentId": "Buttons/Text",
+      "group": "Buttons",
+      "section": "Atoms",
+      "caption": "Lowest-emphasis text action.",
+      "preview": "ButtonTextPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonTextKt.ButtonTextPreview",
+      "path": "images/buttons-text/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.button.ButtonTextKt.ButtonTextPreview"
+      ]
+    },
+    {
+      "componentId": "Buttons/Text",
+      "group": "Buttons",
+      "section": "Atoms",
+      "preview": "ButtonTextDisabledPreview",
+      "reason": "variant",
+      "state": "disabled",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonTextKt.ButtonTextDisabledPreview",
+      "path": "images/buttons-text/ideal__disabled.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.button.ButtonTextKt.ButtonTextDisabledPreview"
+      ]
+    },
+    {
+      "componentId": "Buttons/Text",
+      "group": "Buttons",
+      "section": "Atoms",
+      "preview": "ButtonTextColoredPreview",
+      "reason": "variant",
+      "props": {
+        "color": "custom"
+      },
+      "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonTextKt.ButtonTextColoredPreview",
+      "path": "images/buttons-text/ideal__default__color-custom.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.button.ButtonTextKt.ButtonTextColoredPreview"
+      ]
+    },
+    {
+      "componentId": "Buttons/Segmented single choice",
+      "group": "Buttons",
+      "section": "Atoms",
+      "caption": "Single-choice segmented control.",
+      "preview": "ButtonSegmentedSingleChoicePreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonSegmentedSingleChoiceKt.ButtonSegmentedSingleChoicePreview",
+      "path": "images/buttons-segmented-single-choice/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.button.ButtonSegmentedSingleChoiceKt.ButtonSegmentedSingleChoicePreview"
+      ]
+    },
+    {
+      "componentId": "Buttons/Segmented single choice",
+      "group": "Buttons",
+      "section": "Atoms",
+      "preview": "ButtonSegmentedSingleChoiceWithSelectionPreview",
+      "reason": "variant",
+      "state": "selected",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonSegmentedSingleChoiceKt.ButtonSegmentedSingleChoiceWithSelectionPreview",
+      "path": "images/buttons-segmented-single-choice/ideal__selected.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.button.ButtonSegmentedSingleChoiceKt.ButtonSegmentedSingleChoiceWithSelectionPreview"
+      ]
+    },
+    {
+      "componentId": "Buttons/Segmented single choice",
+      "group": "Buttons",
+      "section": "Atoms",
+      "preview": "ButtonSegmentedSingleChoiceEmptyPreview",
+      "reason": "variant",
+      "state": "empty",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.button.ButtonSegmentedSingleChoiceKt.ButtonSegmentedSingleChoiceEmptyPreview",
+      "path": "images/buttons-segmented-single-choice/ideal__empty.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.button.ButtonSegmentedSingleChoiceKt.ButtonSegmentedSingleChoiceEmptyPreview"
+      ]
+    },
+    {
+      "componentId": "Selection/Switch",
+      "group": "Selection controls",
+      "section": "Atoms",
+      "preview": "SwitchPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.SwitchKt.SwitchPreview",
+      "path": "images/selection-switch/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.SwitchKt.SwitchPreview"
+      ]
+    },
+    {
+      "componentId": "Selection/Switch",
+      "group": "Selection controls",
+      "section": "Atoms",
+      "preview": "SwitchDisabledPreview",
+      "reason": "variant",
+      "state": "disabled",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.SwitchKt.SwitchDisabledPreview",
+      "path": "images/selection-switch/ideal__disabled.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.SwitchKt.SwitchDisabledPreview"
+      ]
+    },
+    {
+      "componentId": "Selection/Radio group",
+      "group": "Selection controls",
+      "section": "Atoms",
+      "preview": "RadioGroupSelectedPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.RadioGroupKt.RadioGroupSelectedPreview",
+      "path": "images/selection-radio-group/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.RadioGroupKt.RadioGroupSelectedPreview"
+      ]
+    },
+    {
+      "componentId": "Selection/Radio group",
+      "group": "Selection controls",
+      "section": "Atoms",
+      "preview": "RadioGroupUnSelectedPreview",
+      "reason": "variant",
+      "state": "unselected",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.RadioGroupKt.RadioGroupUnSelectedPreview",
+      "path": "images/selection-radio-group/ideal__unselected.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.RadioGroupKt.RadioGroupUnSelectedPreview"
+      ]
+    },
+    {
+      "componentId": "Selection/Radio button",
+      "group": "Selection controls",
+      "section": "Atoms",
+      "preview": "RadioButtonPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.button.RadioButtonKt.RadioButtonPreview",
+      "path": "images/selection-radio-button/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.button.RadioButtonKt.RadioButtonPreview"
+      ]
+    },
+    {
+      "componentId": "Selection/Radio button",
+      "group": "Selection controls",
+      "section": "Atoms",
+      "preview": "RadioButtonDisabledPreview",
+      "reason": "variant",
+      "state": "disabled",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.button.RadioButtonKt.RadioButtonDisabledPreview",
+      "path": "images/selection-radio-button/ideal__disabled.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.button.RadioButtonKt.RadioButtonDisabledPreview"
+      ]
+    },
+    {
+      "componentId": "Inputs/Outlined text field",
+      "group": "Inputs",
+      "section": "Atoms",
+      "preview": "TextFieldOutlinedPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.textfield.TextFieldOutlinedKt.TextFieldOutlinedPreview",
+      "path": "images/inputs-outlined-text-field/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.textfield.TextFieldOutlinedKt.TextFieldOutlinedPreview"
+      ]
+    },
+    {
+      "componentId": "Inputs/Outlined text field",
+      "group": "Inputs",
+      "section": "Atoms",
+      "preview": "TextFieldOutlinedWithLabelPreview",
+      "reason": "variant",
+      "props": {
+        "label": "set"
+      },
+      "previewId": "net.thunderbird.components.ui.bolt.atom.textfield.TextFieldOutlinedKt.TextFieldOutlinedWithLabelPreview",
+      "path": "images/inputs-outlined-text-field/ideal__default__label-set.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.textfield.TextFieldOutlinedKt.TextFieldOutlinedWithLabelPreview"
+      ]
+    },
+    {
+      "componentId": "Inputs/Outlined text field",
+      "group": "Inputs",
+      "section": "Atoms",
+      "preview": "TextFieldOutlinedErrorPreview",
+      "reason": "variant",
+      "state": "error",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.textfield.TextFieldOutlinedKt.TextFieldOutlinedErrorPreview",
+      "path": "images/inputs-outlined-text-field/ideal__error.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.textfield.TextFieldOutlinedKt.TextFieldOutlinedErrorPreview"
+      ]
+    },
+    {
+      "componentId": "Inputs/Outlined text field",
+      "group": "Inputs",
+      "section": "Atoms",
+      "preview": "TextFieldOutlinedDisabledPreview",
+      "reason": "variant",
+      "state": "disabled",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.textfield.TextFieldOutlinedKt.TextFieldOutlinedDisabledPreview",
+      "path": "images/inputs-outlined-text-field/ideal__disabled.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.textfield.TextFieldOutlinedKt.TextFieldOutlinedDisabledPreview"
+      ]
+    },
+    {
+      "componentId": "Inputs/Email address",
+      "group": "Inputs",
+      "section": "Atoms",
+      "preview": "EmailAddressInputPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.molecule.input.EmailAddressInputKt.EmailAddressInputPreview",
+      "path": "images/inputs-email-address/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.molecule.input.EmailAddressInputKt.EmailAddressInputPreview"
+      ]
+    },
+    {
+      "componentId": "Inputs/Email address",
+      "group": "Inputs",
+      "section": "Atoms",
+      "preview": "EmailAddressInputWithErrorPreview",
+      "reason": "variant",
+      "state": "error",
+      "previewId": "net.thunderbird.components.ui.bolt.molecule.input.EmailAddressInputKt.EmailAddressInputWithErrorPreview",
+      "path": "images/inputs-email-address/ideal__error.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.molecule.input.EmailAddressInputKt.EmailAddressInputWithErrorPreview"
+      ]
+    },
+    {
+      "componentId": "Inputs/Password",
+      "group": "Inputs",
+      "section": "Atoms",
+      "preview": "PasswordInputPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.molecule.input.PasswordInputKt.PasswordInputPreview",
+      "path": "images/inputs-password/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.molecule.input.PasswordInputKt.PasswordInputPreview"
+      ]
+    },
+    {
+      "componentId": "Inputs/Password",
+      "group": "Inputs",
+      "section": "Atoms",
+      "preview": "PasswordInputWithErrorPreview",
+      "reason": "variant",
+      "state": "error",
+      "previewId": "net.thunderbird.components.ui.bolt.molecule.input.PasswordInputKt.PasswordInputWithErrorPreview",
+      "path": "images/inputs-password/ideal__error.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.molecule.input.PasswordInputKt.PasswordInputWithErrorPreview"
+      ]
+    },
+    {
+      "componentId": "Inputs/Select",
+      "group": "Inputs",
+      "section": "Atoms",
+      "preview": "SelectInputPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.molecule.input.SelectInputKt.SelectInputPreview",
+      "path": "images/inputs-select/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.molecule.input.SelectInputKt.SelectInputPreview"
+      ]
+    },
+    {
+      "componentId": "Inputs/Dropdown menu",
+      "group": "Inputs",
+      "section": "Atoms",
+      "preview": "DropdownMenuBoxPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.DropdownMenuBoxKt.DropdownMenuBoxPreview",
+      "path": "images/inputs-dropdown-menu/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.DropdownMenuBoxKt.DropdownMenuBoxPreview"
+      ]
+    },
+    {
+      "componentId": "Cards/Elevated",
+      "group": "Cards and surfaces",
+      "section": "Atoms",
+      "preview": "CardElevatedPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.card.CardElevatedKt.CardElevatedPreview",
+      "path": "images/cards-elevated/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.card.CardElevatedKt.CardElevatedPreview"
+      ]
+    },
+    {
+      "componentId": "Cards/Outlined",
+      "group": "Cards and surfaces",
+      "section": "Atoms",
+      "preview": "CardOutlinedPreview",
+      "reason": "entry",
+      "theme": "dark",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.card.CardOutlinedKt.CardOutlinedPreview_Dark",
+      "path": "images/cards-outlined/ideal__default__dark.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.card.CardOutlinedKt.CardOutlinedPreview_Dark",
+        "net.thunderbird.components.ui.bolt.atom.card.CardOutlinedKt.CardOutlinedPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Cards/Outlined",
+      "group": "Cards and surfaces",
+      "section": "Atoms",
+      "preview": "CardOutlinedPreview",
+      "reason": "entry",
+      "theme": "light",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.card.CardOutlinedKt.CardOutlinedPreview_Light",
+      "path": "images/cards-outlined/ideal__default__light.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.card.CardOutlinedKt.CardOutlinedPreview_Dark",
+        "net.thunderbird.components.ui.bolt.atom.card.CardOutlinedKt.CardOutlinedPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Surfaces/Surface",
+      "group": "Cards and surfaces",
+      "section": "Atoms",
+      "preview": "SurfacePreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.SurfaceKt.SurfacePreview",
+      "path": "images/surfaces-surface/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.SurfaceKt.SurfacePreview"
+      ]
+    },
+    {
+      "componentId": "Surfaces/Surface",
+      "group": "Cards and surfaces",
+      "section": "Atoms",
+      "preview": "SurfaceWithShapePreview",
+      "reason": "variant",
+      "props": {
+        "shape": "custom"
+      },
+      "previewId": "net.thunderbird.components.ui.bolt.atom.SurfaceKt.SurfaceWithShapePreview",
+      "path": "images/surfaces-surface/ideal__default__shape-custom.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.SurfaceKt.SurfaceWithShapePreview"
+      ]
+    },
+    {
+      "componentId": "Surfaces/Clickable surface",
+      "group": "Cards and surfaces",
+      "section": "Atoms",
+      "preview": "ClickableSurfacePreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.ClickableSurfaceKt.ClickableSurfacePreview",
+      "path": "images/surfaces-clickable-surface/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.ClickableSurfaceKt.ClickableSurfacePreview"
+      ]
+    },
+    {
+      "componentId": "Navigation/Primary tab row",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "TabRowPrimaryPreview",
+      "reason": "entry",
+      "theme": "dark",
+      "previewId": "net.thunderbird.components.ui.bolt.molecule.tab.TabRowPrimaryKt.TabRowPrimaryPreview_Dark",
+      "path": "images/navigation-primary-tab-row/ideal__default__dark.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.molecule.tab.TabRowPrimaryKt.TabRowPrimaryPreview_Dark",
+        "net.thunderbird.components.ui.bolt.molecule.tab.TabRowPrimaryKt.TabRowPrimaryPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Navigation/Primary tab row",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "TabRowPrimaryPreview",
+      "reason": "entry",
+      "theme": "light",
+      "previewId": "net.thunderbird.components.ui.bolt.molecule.tab.TabRowPrimaryKt.TabRowPrimaryPreview_Light",
+      "path": "images/navigation-primary-tab-row/ideal__default__light.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.molecule.tab.TabRowPrimaryKt.TabRowPrimaryPreview_Dark",
+        "net.thunderbird.components.ui.bolt.molecule.tab.TabRowPrimaryKt.TabRowPrimaryPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Navigation/Primary tab row",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "TabRowPrimaryIndicatorChangesPreview",
+      "reason": "variant",
+      "state": "selection changed",
+      "theme": "dark",
+      "previewId": "net.thunderbird.components.ui.bolt.molecule.tab.TabRowPrimaryKt.TabRowPrimaryIndicatorChangesPreview_Dark",
+      "path": "images/navigation-primary-tab-row/ideal__selection-changed__dark.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.molecule.tab.TabRowPrimaryKt.TabRowPrimaryIndicatorChangesPreview_Dark",
+        "net.thunderbird.components.ui.bolt.molecule.tab.TabRowPrimaryKt.TabRowPrimaryIndicatorChangesPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Navigation/Primary tab row",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "TabRowPrimaryIndicatorChangesPreview",
+      "reason": "variant",
+      "state": "selection changed",
+      "theme": "light",
+      "previewId": "net.thunderbird.components.ui.bolt.molecule.tab.TabRowPrimaryKt.TabRowPrimaryIndicatorChangesPreview_Light",
+      "path": "images/navigation-primary-tab-row/ideal__selection-changed__light.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.molecule.tab.TabRowPrimaryKt.TabRowPrimaryIndicatorChangesPreview_Dark",
+        "net.thunderbird.components.ui.bolt.molecule.tab.TabRowPrimaryKt.TabRowPrimaryIndicatorChangesPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Navigation/Drawer item",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "NavigationDrawerItemUnselectedPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.drawer.NavigationDrawerItemKt.NavigationDrawerItemUnselectedPreview",
+      "path": "images/navigation-drawer-item/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.drawer.NavigationDrawerItemKt.NavigationDrawerItemUnselectedPreview"
+      ]
+    },
+    {
+      "componentId": "Navigation/Drawer item",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "NavigationDrawerItemSelectedPreview",
+      "reason": "variant",
+      "state": "selected",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.drawer.NavigationDrawerItemKt.NavigationDrawerItemSelectedPreview",
+      "path": "images/navigation-drawer-item/ideal__selected.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.drawer.NavigationDrawerItemKt.NavigationDrawerItemSelectedPreview"
+      ]
+    },
+    {
+      "componentId": "Navigation/Drawer item",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "NavigationDrawerItemWithLabelBadgePreview",
+      "reason": "variant",
+      "props": {
+        "content": "label and badge"
+      },
+      "previewId": "net.thunderbird.components.ui.bolt.organism.drawer.NavigationDrawerItemKt.NavigationDrawerItemWithLabelBadgePreview",
+      "path": "images/navigation-drawer-item/ideal__default__content-label-and-badge.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.drawer.NavigationDrawerItemKt.NavigationDrawerItemWithLabelBadgePreview"
+      ]
+    },
+    {
+      "componentId": "Navigation/Subtitle top app bar",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "SubtitleTopAppBarPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.SubtitleTopAppBarKt.SubtitleTopAppBarPreview",
+      "path": "images/navigation-subtitle-top-app-bar/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.SubtitleTopAppBarKt.SubtitleTopAppBarPreview"
+      ]
+    },
+    {
+      "componentId": "Navigation/Subtitle top app bar",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "SubtitleTopAppBarWithBackButtonPreview",
+      "reason": "variant",
+      "props": {
+        "navigation": "back"
+      },
+      "previewId": "net.thunderbird.components.ui.bolt.organism.SubtitleTopAppBarKt.SubtitleTopAppBarWithBackButtonPreview",
+      "path": "images/navigation-subtitle-top-app-bar/ideal__default__navigation-back.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.SubtitleTopAppBarKt.SubtitleTopAppBarWithBackButtonPreview"
+      ]
+    },
+    {
+      "componentId": "Navigation/Subtitle top app bar",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "SubtitleTopAppBarWithActionsPreview",
+      "reason": "variant",
+      "props": {
+        "actions": "set"
+      },
+      "previewId": "net.thunderbird.components.ui.bolt.organism.SubtitleTopAppBarKt.SubtitleTopAppBarWithActionsPreview",
+      "path": "images/navigation-subtitle-top-app-bar/ideal__default__actions-set.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.SubtitleTopAppBarKt.SubtitleTopAppBarWithActionsPreview"
+      ]
+    },
+    {
+      "componentId": "Navigation/Swipeable row",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "SwipeableRowPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.molecule.swipe.SwipeableRowKt.SwipeableRowPreview",
+      "path": "images/navigation-swipeable-row/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.molecule.swipe.SwipeableRowKt.SwipeableRowPreview"
+      ]
+    },
+    {
+      "componentId": "Navigation/Modal drawer",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "ModalNavigationDrawerPreview",
+      "reason": "entry",
+      "theme": "dark",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.drawer.ModalNavigationDrawerKt.ModalNavigationDrawerPreview_Dark",
+      "path": "images/navigation-modal-drawer/ideal__default__dark.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.drawer.ModalNavigationDrawerKt.ModalNavigationDrawerPreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.drawer.ModalNavigationDrawerKt.ModalNavigationDrawerPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Navigation/Modal drawer",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "ModalNavigationDrawerPreview",
+      "reason": "entry",
+      "theme": "light",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.drawer.ModalNavigationDrawerKt.ModalNavigationDrawerPreview_Light",
+      "path": "images/navigation-modal-drawer/ideal__default__light.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.drawer.ModalNavigationDrawerKt.ModalNavigationDrawerPreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.drawer.ModalNavigationDrawerKt.ModalNavigationDrawerPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Navigation/Drawer sheet",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "ModalDrawerSheetPreview",
+      "reason": "entry",
+      "theme": "dark",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.drawer.ModalDrawerSheetKt.ModalDrawerSheetPreview_Dark",
+      "path": "images/navigation-drawer-sheet/ideal__default__dark.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.drawer.ModalDrawerSheetKt.ModalDrawerSheetPreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.drawer.ModalDrawerSheetKt.ModalDrawerSheetPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Navigation/Drawer sheet",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "ModalDrawerSheetPreview",
+      "reason": "entry",
+      "theme": "light",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.drawer.ModalDrawerSheetKt.ModalDrawerSheetPreview_Light",
+      "path": "images/navigation-drawer-sheet/ideal__default__light.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.drawer.ModalDrawerSheetKt.ModalDrawerSheetPreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.drawer.ModalDrawerSheetKt.ModalDrawerSheetPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Navigation/Drawer divider",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "NavigationDrawerDividerPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.drawer.NavigationDrawerDividerKt.NavigationDrawerDividerPreview",
+      "path": "images/navigation-drawer-divider/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.drawer.NavigationDrawerDividerKt.NavigationDrawerDividerPreview"
+      ]
+    },
+    {
+      "componentId": "Navigation/Drawer headline",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "NavigationDrawerHeadlinePreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.drawer.NavigationDrawerHeadlineKt.NavigationDrawerHeadlinePreview",
+      "path": "images/navigation-drawer-headline/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.drawer.NavigationDrawerHeadlineKt.NavigationDrawerHeadlinePreview"
+      ]
+    },
+    {
+      "componentId": "Navigation/Drawer item layout",
+      "group": "Navigation",
+      "section": "Molecules",
+      "preview": "NavigationDrawerItemLayoutPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.drawer.NavigationDrawerItemLayoutKt.NavigationDrawerItemLayoutPreview",
+      "path": "images/navigation-drawer-item-layout/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.drawer.NavigationDrawerItemLayoutKt.NavigationDrawerItemLayoutPreview"
+      ]
+    },
+    {
+      "componentId": "Feedback/Inline banner",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "InfoBannerInlineNotificationCardPreviewPreview",
+      "reason": "entry",
+      "theme": "dark",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.banner.inline.InfoBannerInlineNotificationCardKt.InfoBannerInlineNotificationCardPreviewPreview_Dark",
+      "path": "images/feedback-inline-banner/ideal__default__dark.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.banner.inline.InfoBannerInlineNotificationCardKt.InfoBannerInlineNotificationCardPreviewPreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.banner.inline.InfoBannerInlineNotificationCardKt.InfoBannerInlineNotificationCardPreviewPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Feedback/Inline banner",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "InfoBannerInlineNotificationCardPreviewPreview",
+      "reason": "entry",
+      "theme": "light",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.banner.inline.InfoBannerInlineNotificationCardKt.InfoBannerInlineNotificationCardPreviewPreview_Light",
+      "path": "images/feedback-inline-banner/ideal__default__light.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.banner.inline.InfoBannerInlineNotificationCardKt.InfoBannerInlineNotificationCardPreviewPreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.banner.inline.InfoBannerInlineNotificationCardKt.InfoBannerInlineNotificationCardPreviewPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Feedback/Inline banner",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "SuccessBannerInlineNotificationCardPreviewPreview",
+      "reason": "variant",
+      "state": "success",
+      "theme": "dark",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.banner.inline.SuccessBannerInlineNotificationCardKt.SuccessBannerInlineNotificationCardPreviewPreview_Dark",
+      "path": "images/feedback-inline-banner/ideal__success__dark.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.banner.inline.SuccessBannerInlineNotificationCardKt.SuccessBannerInlineNotificationCardPreviewPreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.banner.inline.SuccessBannerInlineNotificationCardKt.SuccessBannerInlineNotificationCardPreviewPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Feedback/Inline banner",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "SuccessBannerInlineNotificationCardPreviewPreview",
+      "reason": "variant",
+      "state": "success",
+      "theme": "light",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.banner.inline.SuccessBannerInlineNotificationCardKt.SuccessBannerInlineNotificationCardPreviewPreview_Light",
+      "path": "images/feedback-inline-banner/ideal__success__light.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.banner.inline.SuccessBannerInlineNotificationCardKt.SuccessBannerInlineNotificationCardPreviewPreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.banner.inline.SuccessBannerInlineNotificationCardKt.SuccessBannerInlineNotificationCardPreviewPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Feedback/Inline banner",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "ErrorBannerInlineNotificationCardPreviewPreview",
+      "reason": "variant",
+      "state": "error",
+      "theme": "dark",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.banner.inline.ErrorBannerInlineNotificationCardKt.ErrorBannerInlineNotificationCardPreviewPreview_Dark",
+      "path": "images/feedback-inline-banner/ideal__error__dark.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.banner.inline.ErrorBannerInlineNotificationCardKt.ErrorBannerInlineNotificationCardPreviewPreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.banner.inline.ErrorBannerInlineNotificationCardKt.ErrorBannerInlineNotificationCardPreviewPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Feedback/Inline banner",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "ErrorBannerInlineNotificationCardPreviewPreview",
+      "reason": "variant",
+      "state": "error",
+      "theme": "light",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.banner.inline.ErrorBannerInlineNotificationCardKt.ErrorBannerInlineNotificationCardPreviewPreview_Light",
+      "path": "images/feedback-inline-banner/ideal__error__light.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.banner.inline.ErrorBannerInlineNotificationCardKt.ErrorBannerInlineNotificationCardPreviewPreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.banner.inline.ErrorBannerInlineNotificationCardKt.ErrorBannerInlineNotificationCardPreviewPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Feedback/Global banner",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "InfoBannerGlobalNotificationCardStringTitlePreview",
+      "reason": "entry",
+      "theme": "dark",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.banner.global.InfoBannerGlobalNotificationCardKt.InfoBannerGlobalNotificationCardStringTitlePreview_Dark",
+      "path": "images/feedback-global-banner/ideal__default__dark.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.banner.global.InfoBannerGlobalNotificationCardKt.InfoBannerGlobalNotificationCardStringTitlePreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.banner.global.InfoBannerGlobalNotificationCardKt.InfoBannerGlobalNotificationCardStringTitlePreview_Light"
+      ]
+    },
+    {
+      "componentId": "Feedback/Global banner",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "InfoBannerGlobalNotificationCardStringTitlePreview",
+      "reason": "entry",
+      "theme": "light",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.banner.global.InfoBannerGlobalNotificationCardKt.InfoBannerGlobalNotificationCardStringTitlePreview_Light",
+      "path": "images/feedback-global-banner/ideal__default__light.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.banner.global.InfoBannerGlobalNotificationCardKt.InfoBannerGlobalNotificationCardStringTitlePreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.banner.global.InfoBannerGlobalNotificationCardKt.InfoBannerGlobalNotificationCardStringTitlePreview_Light"
+      ]
+    },
+    {
+      "componentId": "Feedback/Global banner",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "SuccessBannerGlobalNotificationCardStringTitlePreview",
+      "reason": "variant",
+      "state": "success",
+      "theme": "dark",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.banner.global.SuccessBannerGlobalNotificationCardKt.SuccessBannerGlobalNotificationCardStringTitlePreview_Dark",
+      "path": "images/feedback-global-banner/ideal__success__dark.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.banner.global.SuccessBannerGlobalNotificationCardKt.SuccessBannerGlobalNotificationCardStringTitlePreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.banner.global.SuccessBannerGlobalNotificationCardKt.SuccessBannerGlobalNotificationCardStringTitlePreview_Light"
+      ]
+    },
+    {
+      "componentId": "Feedback/Global banner",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "SuccessBannerGlobalNotificationCardStringTitlePreview",
+      "reason": "variant",
+      "state": "success",
+      "theme": "light",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.banner.global.SuccessBannerGlobalNotificationCardKt.SuccessBannerGlobalNotificationCardStringTitlePreview_Light",
+      "path": "images/feedback-global-banner/ideal__success__light.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.banner.global.SuccessBannerGlobalNotificationCardKt.SuccessBannerGlobalNotificationCardStringTitlePreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.banner.global.SuccessBannerGlobalNotificationCardKt.SuccessBannerGlobalNotificationCardStringTitlePreview_Light"
+      ]
+    },
+    {
+      "componentId": "Feedback/Global banner",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "ErrorBannerGlobalNotificationCardStringTitlePreview",
+      "reason": "variant",
+      "state": "error",
+      "theme": "dark",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.banner.global.ErrorBannerGlobalNotificationCardKt.ErrorBannerGlobalNotificationCardStringTitlePreview_Dark",
+      "path": "images/feedback-global-banner/ideal__error__dark.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.banner.global.ErrorBannerGlobalNotificationCardKt.ErrorBannerGlobalNotificationCardStringTitlePreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.banner.global.ErrorBannerGlobalNotificationCardKt.ErrorBannerGlobalNotificationCardStringTitlePreview_Light"
+      ]
+    },
+    {
+      "componentId": "Feedback/Global banner",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "ErrorBannerGlobalNotificationCardStringTitlePreview",
+      "reason": "variant",
+      "state": "error",
+      "theme": "light",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.banner.global.ErrorBannerGlobalNotificationCardKt.ErrorBannerGlobalNotificationCardStringTitlePreview_Light",
+      "path": "images/feedback-global-banner/ideal__error__light.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.banner.global.ErrorBannerGlobalNotificationCardKt.ErrorBannerGlobalNotificationCardStringTitlePreview_Dark",
+        "net.thunderbird.components.ui.bolt.organism.banner.global.ErrorBannerGlobalNotificationCardKt.ErrorBannerGlobalNotificationCardStringTitlePreview_Light"
+      ]
+    },
+    {
+      "componentId": "Feedback/Error view",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "ErrorViewPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.molecule.ErrorViewKt.ErrorViewPreview",
+      "path": "images/feedback-error-view/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.molecule.ErrorViewKt.ErrorViewPreview"
+      ]
+    },
+    {
+      "componentId": "Feedback/Error view",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "ErrorViewWithRetryAndMessagePreview",
+      "reason": "variant",
+      "props": {
+        "content": "message and retry"
+      },
+      "previewId": "net.thunderbird.components.ui.bolt.molecule.ErrorViewKt.ErrorViewWithRetryAndMessagePreview",
+      "path": "images/feedback-error-view/ideal__default__content-message-and-retry.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.molecule.ErrorViewKt.ErrorViewWithRetryAndMessagePreview"
+      ]
+    },
+    {
+      "componentId": "Feedback/Alert dialog",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "AlertDialogPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.organism.AlertDialogKt.AlertDialogPreview",
+      "path": "images/feedback-alert-dialog/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.AlertDialogKt.AlertDialogPreview"
+      ]
+    },
+    {
+      "componentId": "Feedback/Alert dialog",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "AlertDialogWithIconPreview",
+      "reason": "variant",
+      "props": {
+        "icon": "set"
+      },
+      "previewId": "net.thunderbird.components.ui.bolt.organism.AlertDialogKt.AlertDialogWithIconPreview",
+      "path": "images/feedback-alert-dialog/ideal__default__icon-set.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.AlertDialogKt.AlertDialogWithIconPreview"
+      ]
+    },
+    {
+      "componentId": "Feedback/Alert dialog",
+      "group": "Feedback",
+      "section": "Organisms",
+      "preview": "AlertDialogWithCancelPreview",
+      "reason": "variant",
+      "props": {
+        "cancelAction": "set"
+      },
+      "previewId": "net.thunderbird.components.ui.bolt.organism.AlertDialogKt.AlertDialogWithCancelPreview",
+      "path": "images/feedback-alert-dialog/ideal__default__cancelaction-set.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.organism.AlertDialogKt.AlertDialogWithCancelPreview"
+      ]
+    },
+    {
+      "componentId": "Typography/Display large",
+      "group": "Typography",
+      "section": "Foundations",
+      "preview": "TextDisplayLargePreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.text.TextDisplayLargeKt.TextDisplayLargePreview",
+      "path": "images/typography-display-large/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.text.TextDisplayLargeKt.TextDisplayLargePreview"
+      ]
+    },
+    {
+      "componentId": "Typography/Headline medium",
+      "group": "Typography",
+      "section": "Foundations",
+      "preview": "TextHeadlineMediumPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.text.TextHeadlineMediumKt.TextHeadlineMediumPreview",
+      "path": "images/typography-headline-medium/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.text.TextHeadlineMediumKt.TextHeadlineMediumPreview"
+      ]
+    },
+    {
+      "componentId": "Typography/Body medium",
+      "group": "Typography",
+      "section": "Foundations",
+      "preview": "TextBodyMediumPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.text.TextBodyMediumKt.TextBodyMediumPreview",
+      "path": "images/typography-body-medium/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.text.TextBodyMediumKt.TextBodyMediumPreview"
+      ]
+    },
+    {
+      "componentId": "Typography/Label large",
+      "group": "Typography",
+      "section": "Foundations",
+      "preview": "TextLabelLargePreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.text.TextLabelLargeKt.TextLabelLargePreview",
+      "path": "images/typography-label-large/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.text.TextLabelLargeKt.TextLabelLargePreview"
+      ]
+    },
+    {
+      "componentId": "Typography/Auto-resizing display",
+      "group": "Typography",
+      "section": "Foundations",
+      "preview": "TextDisplayMediumAutoResizePreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.atom.text.TextDisplayMediumAutoResizeKt.TextDisplayMediumAutoResizePreview",
+      "path": "images/typography-auto-resizing-display/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.atom.text.TextDisplayMediumAutoResizeKt.TextDisplayMediumAutoResizePreview"
+      ]
+    },
+    {
+      "componentId": "Templates/List detail pane",
+      "group": "Templates",
+      "section": "Templates",
+      "caption": "Responsive list-detail layout across Bolt's device previews.",
+      "preview": "ListDetailPanePreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.template.ListDetailPaneKt.ListDetailPanePreview_Desktop",
+      "path": "images/templates-list-detail-pane/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.template.ListDetailPaneKt.ListDetailPanePreview_Desktop",
+        "net.thunderbird.components.ui.bolt.template.ListDetailPaneKt.ListDetailPanePreview_Foldable",
+        "net.thunderbird.components.ui.bolt.template.ListDetailPaneKt.ListDetailPanePreview_Phone_landscape",
+        "net.thunderbird.components.ui.bolt.template.ListDetailPaneKt.ListDetailPanePreview_Phone",
+        "net.thunderbird.components.ui.bolt.template.ListDetailPaneKt.ListDetailPanePreview_Small_phone",
+        "net.thunderbird.components.ui.bolt.template.ListDetailPaneKt.ListDetailPanePreview_Tablet"
+      ]
+    },
+    {
+      "componentId": "Templates/Scaffold",
+      "group": "Templates",
+      "section": "Templates",
+      "preview": "ScaffoldPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.template.ScaffoldKt.ScaffoldPreview_Desktop",
+      "path": "images/templates-scaffold/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.template.ScaffoldKt.ScaffoldPreview_Desktop",
+        "net.thunderbird.components.ui.bolt.template.ScaffoldKt.ScaffoldPreview_Foldable",
+        "net.thunderbird.components.ui.bolt.template.ScaffoldKt.ScaffoldPreview_Phone_landscape",
+        "net.thunderbird.components.ui.bolt.template.ScaffoldKt.ScaffoldPreview_Phone",
+        "net.thunderbird.components.ui.bolt.template.ScaffoldKt.ScaffoldPreview_Small_phone",
+        "net.thunderbird.components.ui.bolt.template.ScaffoldKt.ScaffoldPreview_Tablet"
+      ]
+    },
+    {
+      "componentId": "Templates/Scaffold",
+      "group": "Templates",
+      "section": "Templates",
+      "preview": "ScaffoldWitFabPreview",
+      "reason": "variant",
+      "props": {
+        "fab": "set"
+      },
+      "previewId": "net.thunderbird.components.ui.bolt.template.ScaffoldKt.ScaffoldWitFabPreview",
+      "path": "images/templates-scaffold/ideal__default__fab-set.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.template.ScaffoldKt.ScaffoldWitFabPreview"
+      ]
+    },
+    {
+      "componentId": "Templates/Responsive width container",
+      "group": "Templates",
+      "section": "Templates",
+      "preview": "ResponsiveWidthContainerPreview",
+      "reason": "entry",
+      "previewId": "net.thunderbird.components.ui.bolt.template.ResponsiveWidthContainerKt.ResponsiveWidthContainerPreview_Desktop",
+      "path": "images/templates-responsive-width-container/ideal__default.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.template.ResponsiveWidthContainerKt.ResponsiveWidthContainerPreview_Desktop",
+        "net.thunderbird.components.ui.bolt.template.ResponsiveWidthContainerKt.ResponsiveWidthContainerPreview_Foldable",
+        "net.thunderbird.components.ui.bolt.template.ResponsiveWidthContainerKt.ResponsiveWidthContainerPreview_Phone_landscape",
+        "net.thunderbird.components.ui.bolt.template.ResponsiveWidthContainerKt.ResponsiveWidthContainerPreview_Phone",
+        "net.thunderbird.components.ui.bolt.template.ResponsiveWidthContainerKt.ResponsiveWidthContainerPreview_Small_phone",
+        "net.thunderbird.components.ui.bolt.template.ResponsiveWidthContainerKt.ResponsiveWidthContainerPreview_Tablet"
+      ]
+    },
+    {
+      "componentId": "Templates/Horizontal tab pager",
+      "group": "Templates",
+      "section": "Templates",
+      "preview": "HorizontalTabPagerPrimaryPreview",
+      "reason": "entry",
+      "theme": "dark",
+      "previewId": "net.thunderbird.components.ui.bolt.template.pager.HorizontalTabPagerPrimaryKt.HorizontalTabPagerPrimaryPreview_Dark",
+      "path": "images/templates-horizontal-tab-pager/ideal__default__dark.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.template.pager.HorizontalTabPagerPrimaryKt.HorizontalTabPagerPrimaryPreview_Dark",
+        "net.thunderbird.components.ui.bolt.template.pager.HorizontalTabPagerPrimaryKt.HorizontalTabPagerPrimaryPreview_Light"
+      ]
+    },
+    {
+      "componentId": "Templates/Horizontal tab pager",
+      "group": "Templates",
+      "section": "Templates",
+      "preview": "HorizontalTabPagerPrimaryPreview",
+      "reason": "entry",
+      "theme": "light",
+      "previewId": "net.thunderbird.components.ui.bolt.template.pager.HorizontalTabPagerPrimaryKt.HorizontalTabPagerPrimaryPreview_Light",
+      "path": "images/templates-horizontal-tab-pager/ideal__default__light.png",
+      "previewIds": [
+        "net.thunderbird.components.ui.bolt.template.pager.HorizontalTabPagerPrimaryKt.HorizontalTabPagerPrimaryPreview_Dark",
+        "net.thunderbird.components.ui.bolt.template.pager.HorizontalTabPagerPrimaryKt.HorizontalTabPagerPrimaryPreview_Light"
+      ]
+    }
+  ],
+  "source": {
+    "repo": "yschimke/thunderbird-android",
+    "ref": "previews",
+    "module": ":ui:bolt"
+  }
+}
