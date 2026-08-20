@@ -1,0 +1,327 @@
+{
+  "schema": "design-parity-catalog/v1",
+  "system": "thunderbird",
+  "title": "Thunderbird for Android",
+  "components": [
+    {
+      "componentId": "Inbox/Loaded",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inbox-loaded/ideal__default__phone.png",
+          "state": "default",
+          "width": 1078,
+          "height": 2338,
+          "size": "phone",
+          "livePreview": "https://preview.coo.ee/thunderbird/p/inbox-loaded__ideal__default__phone",
+          "previewId": "net.thunderbird.feature.mail.message.list.internal.ui.renderer.statepreview.loadedmessages.MessageListScreenLoadedMessagesContentPreviewKt.ThunderbirdInboxLoadedCatalogPreview_Catalog_-_Phone",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Screens",
+      "group": "Inbox states",
+      "caption": "The real message list with empty, sent, conversation, active-message, and multi-account preview data.",
+      "sourceFile": "src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/loadedmessages/MessageListScreenLoadedMessagesContentPreview.kt",
+      "sourceModule": ":feature:mail:message:list:internal",
+      "bodyLine": 117
+    },
+    {
+      "componentId": "Inbox/Searching",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inbox-searching/ideal__default__phone.png",
+          "state": "default",
+          "width": 1078,
+          "height": 2338,
+          "size": "phone",
+          "livePreview": "https://preview.coo.ee/thunderbird/p/inbox-searching__ideal__default__phone",
+          "previewId": "net.thunderbird.feature.mail.message.list.internal.ui.renderer.statepreview.MessageListScreenSearchingMessagesStatePreviewParamsKt.ThunderbirdInboxSearchingCatalogPreview_Catalog_-_Phone",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Screens",
+      "group": "Inbox states",
+      "caption": "Local search, server search, and no-results states.",
+      "sourceFile": "src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/MessageListScreenSearchingMessagesStatePreviewParams.kt",
+      "sourceModule": ":feature:mail:message:list:internal",
+      "bodyLine": 102
+    },
+    {
+      "componentId": "Inbox/Selecting",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inbox-selecting/ideal__default__phone.png",
+          "state": "default",
+          "width": 1078,
+          "height": 2338,
+          "size": "phone",
+          "livePreview": "https://preview.coo.ee/thunderbird/p/inbox-selecting__ideal__default__phone",
+          "previewId": "net.thunderbird.feature.mail.message.list.internal.ui.renderer.statepreview.MessageListScreenSelectingMessagesStatePreviewParamsKt.ThunderbirdInboxSelectingCatalogPreview_Catalog_-_Phone",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Screens",
+      "group": "Inbox states",
+      "caption": "Message selection mode with multiple selected messages.",
+      "sourceFile": "src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/MessageListScreenSelectingMessagesStatePreviewParams.kt",
+      "sourceModule": ":feature:mail:message:list:internal",
+      "bodyLine": 77
+    },
+    {
+      "componentId": "Inbox/Loading",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inbox-loading/ideal__default__phone.png",
+          "state": "default",
+          "width": 1078,
+          "height": 2338,
+          "size": "phone",
+          "livePreview": "https://preview.coo.ee/thunderbird/p/inbox-loading__ideal__default__phone",
+          "previewId": "net.thunderbird.feature.mail.message.list.internal.ui.renderer.statepreview.MessageListScreenLoadingMessagesStatePreviewParamsKt.ThunderbirdInboxLoadingCatalogPreview_Catalog_-_Phone",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Screens",
+      "group": "Inbox states",
+      "caption": "Initial, progress, pull-to-refresh, and remote-loading states.",
+      "sourceFile": "src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/MessageListScreenLoadingMessagesStatePreviewParams.kt",
+      "sourceModule": ":feature:mail:message:list:internal",
+      "bodyLine": 108
+    },
+    {
+      "componentId": "Inbox/Warming up",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inbox-warming-up/ideal__default__phone.png",
+          "state": "default",
+          "width": 1078,
+          "height": 2338,
+          "size": "phone",
+          "livePreview": "https://preview.coo.ee/thunderbird/p/inbox-warming-up__ideal__default__phone",
+          "previewId": "net.thunderbird.feature.mail.message.list.internal.ui.renderer.statepreview.MessageListScreenWarmingUpStatePreviewParamsKt.ThunderbirdInboxWarmingUpCatalogPreview_Catalog_-_Phone",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Screens",
+      "group": "Inbox states",
+      "caption": "The startup state before the local message list is ready.",
+      "sourceFile": "src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/MessageListScreenWarmingUpStatePreviewParams.kt",
+      "sourceModule": ":feature:mail:message:list:internal",
+      "bodyLine": 69
+    },
+    {
+      "componentId": "Inbox/Phone layout",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inbox-phone-layout/ideal__default__phone.png",
+          "state": "default",
+          "width": 1078,
+          "height": 2338,
+          "size": "phone",
+          "livePreview": "https://preview.coo.ee/thunderbird/p/inbox-phone-layout__ideal__default__phone",
+          "previewId": "net.thunderbird.feature.mail.message.list.internal.ui.renderer.statepreview.loadedmessages.MessageListScreenLoadedMessagesLayoutPreviewKt.ThunderbirdInboxPhoneLayoutCatalogPreview_Catalog_-_Phone",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Screens",
+      "group": "Responsive layouts",
+      "caption": "Compact message-list layout on a phone.",
+      "sourceFile": "src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/loadedmessages/MessageListScreenLoadedMessagesLayoutPreview.kt",
+      "sourceModule": ":feature:mail:message:list:internal",
+      "bodyLine": 95
+    },
+    {
+      "componentId": "Inbox/Tablet layout",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inbox-tablet-layout/ideal__default__tabletlandscape.png",
+          "state": "default",
+          "width": 1920,
+          "height": 1200,
+          "size": "tabletLandscape",
+          "livePreview": "https://preview.coo.ee/thunderbird/p/inbox-tablet-layout__ideal__default__tabletlandscape",
+          "previewId": "net.thunderbird.feature.mail.message.list.internal.ui.renderer.statepreview.loadedmessages.MessageListScreenLoadedMessagesLayoutPreviewKt.ThunderbirdInboxTabletLayoutCatalogPreview_Catalog_-_Tablet",
+          "density": 1.5
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Screens",
+      "group": "Responsive layouts",
+      "caption": "Expanded message-list layout on a landscape tablet.",
+      "sourceFile": "src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/loadedmessages/MessageListScreenLoadedMessagesLayoutPreview.kt",
+      "sourceModule": ":feature:mail:message:list:internal",
+      "bodyLine": 103
+    },
+    {
+      "componentId": "Inbox/Display density",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inbox-display-density/ideal__default__phone.png",
+          "state": "default",
+          "width": 1078,
+          "height": 2338,
+          "size": "phone",
+          "livePreview": "https://preview.coo.ee/thunderbird/p/inbox-display-density__ideal__default__phone",
+          "previewId": "net.thunderbird.feature.mail.message.list.internal.ui.renderer.statepreview.loadedmessages.MessageListScreenLoadedMessagesDensityPreviewKt.ThunderbirdInboxDensityCatalogPreview_Catalog_-_Phone",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Screens",
+      "group": "Preferences",
+      "caption": "Default, compact, and relaxed message-list density settings.",
+      "sourceFile": "src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/loadedmessages/MessageListScreenLoadedMessagesDensityPreview.kt",
+      "sourceModule": ":feature:mail:message:list:internal",
+      "bodyLine": 95
+    },
+    {
+      "componentId": "Inbox/Footer behavior",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/inbox-footer-behavior/ideal__default__phone.png",
+          "state": "default",
+          "width": 1078,
+          "height": 2338,
+          "size": "phone",
+          "livePreview": "https://preview.coo.ee/thunderbird/p/inbox-footer-behavior__ideal__default__phone",
+          "previewId": "net.thunderbird.feature.mail.message.list.internal.ui.renderer.statepreview.loadedmessages.MessageListScreenLoadedMessagesFooterPreviewKt.ThunderbirdInboxFooterCatalogPreview_Catalog_-_Phone",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Screens",
+      "group": "Preferences",
+      "caption": "Message-list footer behavior under the supported preference combinations.",
+      "sourceFile": "src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/loadedmessages/MessageListScreenLoadedMessagesFooterPreview.kt",
+      "sourceModule": ":feature:mail:message:list:internal",
+      "bodyLine": 91
+    },
+    {
+      "componentId": "Archive folder/Setup dialog",
+      "images": [
+        {
+          "variant": "ideal",
+          "path": "images/archive-folder-setup-dialog/ideal__default.png",
+          "state": "default",
+          "width": 1050,
+          "height": 2100,
+          "livePreview": "https://preview.coo.ee/thunderbird/p/archive-folder-setup-dialog__ideal__default",
+          "previewId": "net.thunderbird.feature.mail.message.list.ui.internal.dialog.SetupArchiveFolderDialogPreviewKt.ThunderbirdArchiveFolderSetupCatalogPreview_Catalog_-_Setup_archive_folder",
+          "density": 2.625
+        }
+      ],
+      "greenlines": [],
+      "redlines": [],
+      "section": "Components",
+      "group": "Dialogs",
+      "caption": "Cannot-archive, choose-folder, loading, populated-folder, and create-folder states.",
+      "sourceFile": "src/debug/kotlin/net/thunderbird/feature/mail/message/list/ui/internal/dialog/SetupArchiveFolderDialogPreview.kt",
+      "sourceModule": ":feature:mail:message:list:internal",
+      "bodyLine": 54
+    }
+  ],
+  "library": [
+    "Thunderbird Bolt",
+    "AndroidX Compose Material 3"
+  ],
+  "renderer": "compose-preview 1.21.0",
+  "generatedAt": "2026-08-20T07:07:59.894Z",
+  "display": {
+    "surface": "light",
+    "hero": "Inbox/Loaded"
+  },
+  "themes": [
+    {
+      "id": "net.thunderbird.feature.mail.message.list.internal.ui.preview.MessageListK9MailDarkThemeCatalog",
+      "tokensFile": "themes/net.thunderbird.feature.mail.message.list.internal.ui.preview.messagelistk9maildarkthemecatalog.dtcg.json",
+      "name": "K-9 Mail Dark",
+      "group": "K-9 Mail",
+      "dark": true
+    },
+    {
+      "id": "net.thunderbird.feature.mail.message.list.internal.ui.preview.MessageListK9MailLightThemeCatalog",
+      "tokensFile": "themes/net.thunderbird.feature.mail.message.list.internal.ui.preview.messagelistk9maillightthemecatalog.dtcg.json",
+      "name": "K-9 Mail Light",
+      "group": "K-9 Mail",
+      "dark": false
+    },
+    {
+      "id": "net.thunderbird.feature.mail.message.list.internal.ui.preview.MessageListThunderbirdDarkThemeCatalog",
+      "tokensFile": "themes/net.thunderbird.feature.mail.message.list.internal.ui.preview.messagelistthunderbirddarkthemecatalog.dtcg.json",
+      "name": "Thunderbird Dark",
+      "group": "Thunderbird",
+      "dark": true
+    },
+    {
+      "id": "net.thunderbird.feature.mail.message.list.internal.ui.preview.MessageListThunderbirdLightThemeCatalog",
+      "tokensFile": "themes/net.thunderbird.feature.mail.message.list.internal.ui.preview.messagelistthunderbirdlightthemecatalog.dtcg.json",
+      "name": "Thunderbird Light",
+      "group": "Thunderbird",
+      "dark": false
+    }
+  ],
+  "failures": [
+    {
+      "id": "render-failed--setuparchivefolderdialogpreview--net-thunderbird-feature-mail-message-list-ui-internal-dialog-setuparchivefolderdialogpreviewkt-setuparchivefolderdialogpreview-dark",
+      "componentId": "SetupArchiveFolderDialogPreview",
+      "preview": "net.thunderbird.feature.mail.message.list.ui.internal.dialog.SetupArchiveFolderDialogPreviewKt.SetupArchiveFolderDialogPreview_Dark",
+      "phase": "render",
+      "errorClass": "androidx.test.espresso.AppNotIdleException",
+      "message": "Compose did not get idle after 13902 attempts in 60 SECONDS.\n\n1. Check your measure/layout lambdas for infinite composition loops.\n2. Verify that the 'busy' resources listed above are not deadlocked.\n3. Increase Espresso's master idling policy if a longer timeout is required.\n The following Idle Conditions failed .",
+      "stackTrace": "androidx.test.espresso.AppNotIdleException: Compose did not get idle after 13902 attempts in 60 SECONDS.\n\n1. Check your measure/layout lambdas for infinite composition loops.\n2. Verify that the 'busy' resources listed above are not deadlocked.\n3. Increase Espresso's master idling policy if a longer timeout is required.\n The following Idle Conditions failed .\n\tat androidx.test.espresso.AppNotIdleException.create(AppNotIdleException.java:81)\n\tat androidx.compose.ui.test.RobolectricIdlingStrategy.runUntilIdle$lambda$0(RobolectricIdlingStrategy.android.kt:101)\n\tat androidx.compose.ui.test.AndroidSynchronization_androidKt.runOnUiThread(AndroidSynchronization.android.kt:35)\n\tat androidx.compose.ui.test.RobolectricIdlingStrategy.runUntilIdle(RobolectricIdlingStrategy.android.kt:66)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.waitForIdle(ComposeUiTest.android.kt:709)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$waitForIdle(ComposeUiTest.android.kt:474)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitForIdle(ComposeUiTest.android.kt:845)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.setContent(ComposeUiTest.android.kt:933)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule.setContent(AndroidComposeTestRule.android.kt:524)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase$renderDefault$statement$1.evaluate(RobolectricRenderTest.kt:1493)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$testWithDisposal$1.evaluate(AndroidComposeTestRule.android.kt:418)\n\tat org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invokeSuspend(AndroidComposeTestRule.android.kt:438)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(AndroidComposeTestRule.android.kt)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(AndroidComposeTestRule.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invokeSuspend(ComposeUiTest.android.kt:682)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.IdlingStrategy.withStrategy$suspendImpl(IdlingStrategy.android.kt:55)\n\tat androidx.compose.ui.test.IdlingStrategy.withStrategy(IdlingStrategy.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invokeSuspend(ComposeUiTest.android.kt:679)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:317)\n\tat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\n\tat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\n\tat kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)\n\tat kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:98)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:326)\n\tat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\n\tat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\n\tat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)\n\tat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)\n\tat kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)\n\tat kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source)\n\tat kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)\n\tat kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source)\n\tat kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)\n\tat kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source)\n\tat kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:309)\n\tat kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:167)\n\tat kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:658)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1.evaluate(AndroidComposeTestRule.android.kt:438)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderDefault(RobolectricRenderTest.kt:2288)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderDefault$default(RobolectricRenderTest.kt:1168)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderPreview(RobolectricRenderTest.kt:882)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.robolectric.RobolectricTestRunner$HelperTestRunner$1.evaluate(RobolectricTestRunner.java:542)\n\tat org.robolectric.internal.SandboxTestRunner.lambda$executeInSandbox$4(SandboxTestRunner.java:429)\n\tat org.robolectric.internal.SandboxTestRunner.runInSandbox(SandboxTestRunner.java:455)\n\tat org.robolectric.internal.SandboxTestRunner.executeInSandbox(SandboxTestRunner.java:420)\n\tat org.robolectric.internal.SandboxTestRunner$5.evaluate(SandboxTestRunner.java:405)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\n\tat org.robolectric.internal.SandboxTestRunner.access$000(SandboxTestRunner.java:64)\n\tat org.robolectric.internal.SandboxTestRunner$4.evaluate(SandboxTestRunner.java:294)\n\tat org.robolectric.internal.SandboxTestRunner$2.evaluate(SandboxTestRunner.java:260)\n\tat org.robolectric.internal.SandboxTestRunner$3.lambda$evaluate$0(SandboxTestRunner.java:280)\n\tat org.robolectric.internal.bytecode.Sandbox.lambda$runOnMainThreadWithClassLoader$1(Sandbox.java:112)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n",
+      "mode": "dark",
+      "sourceFile": "src/debug/kotlin/net/thunderbird/feature/mail/message/list/ui/internal/dialog/SetupArchiveFolderDialogPreview.kt"
+    },
+    {
+      "id": "render-failed--setuparchivefolderdialogpreview--net-thunderbird-feature-mail-message-list-ui-internal-dialog-setuparchivefolderdialogpreviewkt-setuparchivefolderdialogpreview-light",
+      "componentId": "SetupArchiveFolderDialogPreview",
+      "preview": "net.thunderbird.feature.mail.message.list.ui.internal.dialog.SetupArchiveFolderDialogPreviewKt.SetupArchiveFolderDialogPreview_Light",
+      "phase": "render",
+      "errorClass": "androidx.test.espresso.AppNotIdleException",
+      "message": "Compose did not get idle after 13787 attempts in 60 SECONDS.\n\n1. Check your measure/layout lambdas for infinite composition loops.\n2. Verify that the 'busy' resources listed above are not deadlocked.\n3. Increase Espresso's master idling policy if a longer timeout is required.\n The following Idle Conditions failed .",
+      "stackTrace": "androidx.test.espresso.AppNotIdleException: Compose did not get idle after 13787 attempts in 60 SECONDS.\n\n1. Check your measure/layout lambdas for infinite composition loops.\n2. Verify that the 'busy' resources listed above are not deadlocked.\n3. Increase Espresso's master idling policy if a longer timeout is required.\n The following Idle Conditions failed .\n\tat androidx.test.espresso.AppNotIdleException.create(AppNotIdleException.java:81)\n\tat androidx.compose.ui.test.RobolectricIdlingStrategy.runUntilIdle$lambda$0(RobolectricIdlingStrategy.android.kt:101)\n\tat androidx.compose.ui.test.AndroidSynchronization_androidKt.runOnUiThread(AndroidSynchronization.android.kt:35)\n\tat androidx.compose.ui.test.RobolectricIdlingStrategy.runUntilIdle(RobolectricIdlingStrategy.android.kt:66)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.waitForIdle(ComposeUiTest.android.kt:709)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.access$waitForIdle(ComposeUiTest.android.kt:474)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.waitForIdle(ComposeUiTest.android.kt:845)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$AndroidComposeUiTestImpl.setContent(ComposeUiTest.android.kt:933)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule.setContent(AndroidComposeTestRule.android.kt:524)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase$renderDefault$statement$1.evaluate(RobolectricRenderTest.kt:1493)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$testWithDisposal$1.evaluate(AndroidComposeTestRule.android.kt:418)\n\tat org.junit.rules.ExternalResource$1.evaluate(ExternalResource.java:54)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invokeSuspend(AndroidComposeTestRule.android.kt:438)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(AndroidComposeTestRule.android.kt)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1$evaluate$1.invoke(AndroidComposeTestRule.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invokeSuspend(ComposeUiTest.android.kt:682)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1$1$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.IdlingStrategy.withStrategy$suspendImpl(IdlingStrategy.android.kt:55)\n\tat androidx.compose.ui.test.IdlingStrategy.withStrategy(IdlingStrategy.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invokeSuspend(ComposeUiTest.android.kt:679)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment$runTest$1$1.invoke(ComposeUiTest.android.kt)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$1.invokeSuspend(TestBuilders.kt:317)\n\tat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\n\tat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\n\tat kotlinx.coroutines.test.TestDispatcher.processEvent$kotlinx_coroutines_test(TestDispatcher.kt:24)\n\tat kotlinx.coroutines.test.TestCoroutineScheduler.tryRunNextTaskUnless$kotlinx_coroutines_test(TestCoroutineScheduler.kt:98)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt$runTest$2$1$workRunner$1.invokeSuspend(TestBuilders.kt:326)\n\tat kotlin.coroutines.jvm.internal.BaseContinuationImpl.resumeWith(ContinuationImpl.kt:34)\n\tat kotlinx.coroutines.DispatchedTask.run(DispatchedTask.kt:100)\n\tat kotlinx.coroutines.EventLoopImplBase.processNextEvent(EventLoop.common.kt:256)\n\tat kotlinx.coroutines.BlockingCoroutine.joinBlocking(Builders.kt:54)\n\tat kotlinx.coroutines.BuildersKt__BuildersKt.runBlockingImpl(Builders.kt:30)\n\tat kotlinx.coroutines.BuildersKt.runBlockingImpl(Unknown Source)\n\tat kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK(Builders.concurrent.kt:172)\n\tat kotlinx.coroutines.BuildersKt.runBlockingK(Unknown Source)\n\tat kotlinx.coroutines.BuildersKt__Builders_concurrentKt.runBlockingK$default(Builders.concurrent.kt:157)\n\tat kotlinx.coroutines.BuildersKt.runBlockingK$default(Unknown Source)\n\tat kotlinx.coroutines.test.TestBuildersJvmKt.createTestResult(TestBuildersJvm.kt:10)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:309)\n\tat kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)\n\tat kotlinx.coroutines.test.TestBuildersKt__TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:167)\n\tat kotlinx.coroutines.test.TestBuildersKt.runTest-8Mi8wO0(TestBuilders.kt:1)\n\tat androidx.compose.ui.test.AndroidComposeUiTestEnvironment.runTest(ComposeUiTest.android.kt:658)\n\tat androidx.compose.ui.test.junit4.AndroidComposeTestRule$apply$1.evaluate(AndroidComposeTestRule.android.kt:438)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderDefault(RobolectricRenderTest.kt:2288)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderDefault$default(RobolectricRenderTest.kt:1168)\n\tat ee.schimke.composeai.renderer.RobolectricRenderTestBase.renderPreview(RobolectricRenderTest.kt:882)\n\tat java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)\n\tat java.base/java.lang.reflect.Method.invoke(Method.java:580)\n\tat org.junit.runners.model.FrameworkMethod$1.runReflectiveCall(FrameworkMethod.java:59)\n\tat org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)\n\tat org.junit.runners.model.FrameworkMethod.invokeExplosively(FrameworkMethod.java:56)\n\tat org.junit.internal.runners.statements.InvokeMethod.evaluate(InvokeMethod.java:17)\n\tat org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306)\n\tat org.robolectric.RobolectricTestRunner$HelperTestRunner$1.evaluate(RobolectricTestRunner.java:542)\n\tat org.robolectric.internal.SandboxTestRunner.lambda$executeInSandbox$4(SandboxTestRunner.java:429)\n\tat org.robolectric.internal.SandboxTestRunner.runInSandbox(SandboxTestRunner.java:455)\n\tat org.robolectric.internal.SandboxTestRunner.executeInSandbox(SandboxTestRunner.java:420)\n\tat org.robolectric.internal.SandboxTestRunner$5.evaluate(SandboxTestRunner.java:405)\n\tat org.junit.runners.BlockJUnit4ClassRunner$1.evaluate(BlockJUnit4ClassRunner.java:100)\n\tat org.junit.runners.ParentRunner.runLeaf(ParentRunner.java:366)\n\tat org.junit.runners.BlockJUnit4ClassRunner.runChild(BlockJUnit4ClassRunner.java:103)\n\tat org.robolectric.internal.SandboxTestRunner.access$000(SandboxTestRunner.java:64)\n\tat org.robolectric.internal.SandboxTestRunner$4.evaluate(SandboxTestRunner.java:294)\n\tat org.robolectric.internal.SandboxTestRunner$2.evaluate(SandboxTestRunner.java:260)\n\tat org.robolectric.internal.SandboxTestRunner$3.lambda$evaluate$0(SandboxTestRunner.java:280)\n\tat org.robolectric.internal.bytecode.Sandbox.lambda$runOnMainThreadWithClassLoader$1(Sandbox.java:112)\n\tat java.base/java.util.concurrent.FutureTask.run(FutureTask.java:317)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1144)\n\tat java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:642)\n\tat java.base/java.lang.Thread.run(Thread.java:1583)\n",
+      "mode": "light",
+      "sourceFile": "src/debug/kotlin/net/thunderbird/feature/mail/message/list/ui/internal/dialog/SetupArchiveFolderDialogPreview.kt"
+    }
+  ],
+  "liveBundle": {
+    "path": "bundle/",
+    "file": "bundle.png"
+  },
+  "liveBundles": [
+    {
+      "path": "bundle/",
+      "file": "bundle.png",
+      "module": ":feature:mail:message:list:internal",
+      "previewIdPrefix": ""
+    }
+  ],
+  "source": {
+    "repo": "yschimke/thunderbird-android",
+    "ref": "previews",
+    "module": ":feature:mail:message:list:internal"
+  }
+}

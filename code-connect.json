@@ -1,0 +1,103 @@
+{
+  "system": "thunderbird",
+  "title": "Thunderbird for Android",
+  "label": "Compose",
+  "source": {
+    "repo": "yschimke/thunderbird-android",
+    "ref": "previews",
+    "module": ":feature:mail:message:list:internal"
+  },
+  "generatedAt": "2026-08-20T07:08:00.921Z",
+  "mappings": [
+    {
+      "componentId": "Inbox/Loaded",
+      "figmaLayerName": "Inbox/Loaded",
+      "componentName": "ThunderbirdInboxLoadedCatalogPreview",
+      "source": "https://github.com/yschimke/thunderbird-android/blob/previews/feature/mail/message/list/internal/src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/loadedmessages/MessageListScreenLoadedMessagesContentPreview.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ThunderbirdInboxLoadedCatalogPreview"
+    },
+    {
+      "componentId": "Inbox/Searching",
+      "figmaLayerName": "Inbox/Searching",
+      "componentName": "ThunderbirdInboxSearchingCatalogPreview",
+      "source": "https://github.com/yschimke/thunderbird-android/blob/previews/feature/mail/message/list/internal/src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/MessageListScreenSearchingMessagesStatePreviewParams.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ThunderbirdInboxSearchingCatalogPreview"
+    },
+    {
+      "componentId": "Inbox/Selecting",
+      "figmaLayerName": "Inbox/Selecting",
+      "componentName": "ThunderbirdInboxSelectingCatalogPreview",
+      "source": "https://github.com/yschimke/thunderbird-android/blob/previews/feature/mail/message/list/internal/src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/MessageListScreenSelectingMessagesStatePreviewParams.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ThunderbirdInboxSelectingCatalogPreview"
+    },
+    {
+      "componentId": "Inbox/Loading",
+      "figmaLayerName": "Inbox/Loading",
+      "componentName": "ThunderbirdInboxLoadingCatalogPreview",
+      "source": "https://github.com/yschimke/thunderbird-android/blob/previews/feature/mail/message/list/internal/src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/MessageListScreenLoadingMessagesStatePreviewParams.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ThunderbirdInboxLoadingCatalogPreview"
+    },
+    {
+      "componentId": "Inbox/Warming up",
+      "figmaLayerName": "Inbox/Warming up",
+      "componentName": "ThunderbirdInboxWarmingUpCatalogPreview",
+      "source": "https://github.com/yschimke/thunderbird-android/blob/previews/feature/mail/message/list/internal/src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/MessageListScreenWarmingUpStatePreviewParams.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ThunderbirdInboxWarmingUpCatalogPreview"
+    },
+    {
+      "componentId": "Inbox/Phone layout",
+      "figmaLayerName": "Inbox/Phone layout",
+      "componentName": "ThunderbirdInboxPhoneLayoutCatalogPreview",
+      "source": "https://github.com/yschimke/thunderbird-android/blob/previews/feature/mail/message/list/internal/src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/loadedmessages/MessageListScreenLoadedMessagesLayoutPreview.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ThunderbirdInboxPhoneLayoutCatalogPreview"
+    },
+    {
+      "componentId": "Inbox/Tablet layout",
+      "figmaLayerName": "Inbox/Tablet layout",
+      "componentName": "ThunderbirdInboxTabletLayoutCatalogPreview",
+      "source": "https://github.com/yschimke/thunderbird-android/blob/previews/feature/mail/message/list/internal/src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/loadedmessages/MessageListScreenLoadedMessagesLayoutPreview.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ThunderbirdInboxTabletLayoutCatalogPreview"
+    },
+    {
+      "componentId": "Inbox/Display density",
+      "figmaLayerName": "Inbox/Display density",
+      "componentName": "ThunderbirdInboxDensityCatalogPreview",
+      "source": "https://github.com/yschimke/thunderbird-android/blob/previews/feature/mail/message/list/internal/src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/loadedmessages/MessageListScreenLoadedMessagesDensityPreview.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ThunderbirdInboxDensityCatalogPreview"
+    },
+    {
+      "componentId": "Inbox/Footer behavior",
+      "figmaLayerName": "Inbox/Footer behavior",
+      "componentName": "ThunderbirdInboxFooterCatalogPreview",
+      "source": "https://github.com/yschimke/thunderbird-android/blob/previews/feature/mail/message/list/internal/src/debug/kotlin/net/thunderbird/feature/mail/message/list/internal/ui/renderer/statepreview/loadedmessages/MessageListScreenLoadedMessagesFooterPreview.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ThunderbirdInboxFooterCatalogPreview"
+    },
+    {
+      "componentId": "Archive folder/Setup dialog",
+      "figmaLayerName": "Archive folder/Setup dialog",
+      "componentName": "ThunderbirdArchiveFolderSetupCatalogPreview",
+      "source": "https://github.com/yschimke/thunderbird-android/blob/previews/feature/mail/message/list/internal/src/debug/kotlin/net/thunderbird/feature/mail/message/list/ui/internal/dialog/SetupArchiveFolderDialogPreview.kt",
+      "label": "Compose",
+      "confidence": "preview-fallback",
+      "previewName": "ThunderbirdArchiveFolderSetupCatalogPreview"
+    }
+  ]
+}
